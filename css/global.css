@@ -1,5 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", serif;
+  color: black;
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* __________________
+        HEADER 
+ ____________________ */
+
+.Header-logoLink {
+  text-decoration: none;
+}
+
+.Header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.625rem;
+}
+
+.Header-enlaces {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.Header-link {
+  text-decoration: none;
+}
+
+
+
+/* __________________
+        FOOTER 
+ ____________________ */
+
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+background-color: rgb(234, 234, 234);
+padding: 3.9rem 1.25rem 1rem;
+
+height: 332px;
+
+}
+
+.Footer-lead {
+display: flex;
+flex-direction: row;
+gap: 0.6rem;
+align-items: center;
+}
+
+.Circle{
+width:  0.9rem;
+height:  0.9rem;
+background-color: black;
+border-radius: 50%;
+}
+
+.Footer-leadTxt {
+    font-size: 0.9rem;
+}
+
+.Footer-h2 {
+    padding:0.3rem 0rem 1rem;
+    font-size: 2.3rem;  
+}
+
+.Footer-enlaces {
+    display: flex;
+    font-size: 1.3rem;
+    padding-bottom: 3.75rem;
+    gap: 5rem;
+}
+
+.Footer-gmail {
+ 
+
+}
+
+.Footer-linkedin {
+    
+}
+
+.Credits {
+    font-size: 0.8rem;
+    color: grey;
+    margin-bottom: 1.25rem;
 }
