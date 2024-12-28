@@ -182,3 +182,32 @@ svg {
   color: grey;
   margin-bottom: 1.25rem;
 }
+
+
+/* ________________________ */
+/*       Media Queries      */
+/* ________________________ */
+
+/* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Moviles grandes */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Tablets */
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Pantallas grandes */
+}
+
+@media (min-width: 1441px) {
+  /* Pantallas grandes */
+}
+
+
+
+/* Si fuera necesario: estilos para tablets: @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+ 
+ 
