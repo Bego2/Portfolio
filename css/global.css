@@ -1,22 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+/* __________________
+        RESET 
+ ____________________ */
+
+/* Custom Properties */
+
+:root {
+  --color-primary: black;
+  --color-secondary: white;
+
+  --tipo-primary: "Inter", Arial, sans-serif;
+  --tipo-secondary: Arial, sans-serif;
+}
+
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Inter", serif;
-  color: black;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Enlaces me funcionarán como cajas (block) salvo los enlaces que están dentro de párrafos (inline) */
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth; /* Al clickar en un enlace con ancla -> scroll suave a la seccion*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit; /* Heredado de la etiqueta contenedora*/
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+svg {
+  width: 100%;
+  display: block; /* Por defect es inline-block*/
+  fill: currentColor; /* Aplicar el color correct*/
 }
 
 .Body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  font-family: var(--tipo-primary);
+  color: var(--tipo-primary);
+  background-color: var(--color-secondary);
+  /* line-height: 1.4rem; */
+   /* más acessibilidad */
 }
+
 
 /* __________________
         HEADER 
  ____________________ */
+
+.Header {
+  width: 100%;
+  background-color: rgb(255, 211, 128);
+}
 
 .Header-logoLink {
   text-decoration: none;
@@ -34,71 +120,65 @@
   flex-direction: row;
   gap: 0.625rem;
   list-style: none;
-  font-size: 0.9rem;
+  /* font-size: 0.9em; */
 }
 
 .Header-link {
   text-decoration: none;
 }
 
-
-
 /* __________________
         FOOTER 
  ____________________ */
 
-
 .Footer {
-    display: flex;
-    flex-direction: column;
-background-color: rgb(234, 234, 234);
-padding: 3.9rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(234, 234, 234);
+  padding: 3.9rem 1.8rem 1rem;
 
-height: 332px;
-
+  height: auto;
 }
 
 .Footer-lead {
-display: flex;
-flex-direction: row;
-gap: 0.6rem;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-.Circle{
-width:  0.9rem;
-height:  0.9rem;
-background-color: black;
-border-radius: 50%;
+.Circle {
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: black;
+  border-radius: 50%;
 }
 
 .Footer-leadTxt {
-    font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 .Footer-h2 {
-    padding:0.3rem 0rem 1rem;
-    font-size: 2.3rem;  
+  padding: 0.3rem 0rem 1rem;
+  font-size: 2.3em;
 }
 
 .Footer-enlaces {
-    display: flex;
-    font-size: 1.3rem;
-    padding-bottom: 3.75rem;
-    gap: 5rem;
+  display: flex;
+  font-size: 1.3em;
+  padding-bottom: 3.75rem;
+  gap: 5rem;
 }
 
-.Footer-gmail {
- 
-
+/* .Footer-gmail {
 }
 
 .Footer-linkedin {
-    
-}
+} */
 
 .Credits {
-    font-size: 0.8rem;
-    color: grey;
-    margin-bottom: 1.25rem;
+  font-size: 0.8em;
+  color: grey;
+  margin-bottom: 1.25rem;
 }

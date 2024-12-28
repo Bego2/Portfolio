@@ -15,7 +15,7 @@
     <meta name="author" content="Begoña Cardo" />
     <meta
       name="copyright"
-      content="© Begoña Cardo 2024. Todos los derechos reservados."
+      content="© Begoña Cardo 2025. Todos los derechos reservados."
     />
 
     <link rel="stylesheet" href="css/global.css" />
@@ -25,14 +25,14 @@
   <body class="Body">
     <header class="Header">
       <nav class="Header-nav">
-        <a href="index.html" class="Header-logoLink">
+        <a href="index.html" title="Volver al inicio" class="Header-logoLink">
           <span class="Header-logo">B</span>
         </a>
 
         <ul class="Header-enlaces">
-          <li><a href="index.html" class="Header-link">Proyectos</a></li>
-          <li><a href="about.html" class="Header-link">Información</a></li>
-          <li><a href="index.html" class="Header-link">Mi Email</a></li>
+          <li><a href="index.html" title="Ir a página de proyectos" class="Header-link">Proyectos</a></li>
+          <li><a href="about.html" title="Información sobre mi" class="Header-link">Información</a></li>
+          <li><a href="index.html" title="Contactar conmigo" class="Header-link">Mi Email</a></li>
         </ul>
       </nav>
     </header>
@@ -43,29 +43,68 @@
           Hola, soy Begoña.<br />
           Me encanta crear entornos digitales útiles que generen un impacto
           positivo en las personas.<br />Aquí encontrarás una selección de mis
-          proyectos de diseño gráfico y UX-UI. 
+          proyectos de diseño gráfico y UX-UI.
         </h1>
 
-        <p class="H1">↓</p>
+        <p class="Hero-arrow">↓</p>
       </section>
 
       <section class="Proyectos">
-        <div class="Proyectos-card">
-          <div class="Proyectos-img"></div>
+        <h2 class="Proyectos-title">Mis proyectos</h2>
 
-          <div class="Proyectos-textos">
-            <h3 class="H3">Título</h3>
+        <div class="Proyectos-grid">
+          <!-- Proyecto 1 -->
+          <article class="Proyecto">
+            <a
+              href="index.html"
+              title="Visita el proyecto 1"
+              class="Proyecto-link"
+            >
+              <div class="Proyecto-img">
+                <img src="#" alt="" loading="lazy">
+              </div>
 
-            <h5 class="Proyectos-subtitulo">
-              Aquí va la descripción breve del proyecto que no debe exceder el
-              párrafo y que tiene que tener un copy chulito
-            </h5>
+              <div class="Proyecto-txts">
+                <h3 class="Proyecto-title">Título</h3>
 
-            <div class="Proyectos-tags">
-              <span class="Proyectos-tagItem">UX-UI</span>
-              <span class="Proyectos-tagItem">E-commerce</span>
-            </div>
-          </div>
+                <h5 class="Proyecto-subtit">
+                  Aquí va la descripción breve del proyecto que no debe exceder
+                  el párrafo y que tiene que tener un copy chulito
+                </h5>
+
+                <div class="Proyecto-tags">
+                  <span class="Proyecto-tag">UX-UI</span>
+                  <span class="Proyecto-tag">E-commerce</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Proyecto 2 -->
+          <article class="Proyecto">
+            <a
+              href="index.html"
+              title="Visita el proyecto 1"
+              class="Proyecto-link"
+            >
+              <div class="Proyecto-img">
+                <img src="#" alt="" loading="lazy">
+              </div>
+
+              <div class="Proyecto-txts">
+                <h3 class="Proyecto-title">Título</h3>
+
+                <h5 class="Proyecto-subtit">
+                  Aquí va la descripción breve del proyecto que no debe exceder
+                  el párrafo y que tiene que tener un copy chulito
+                </h5>
+
+                <div class="Proyecto-tags">
+                  <span class="Proyecto-tag">UX-UI</span>
+                  <span class="Proyecto-tag">E-commerce</span>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
       </section>
     </main>
@@ -77,12 +116,13 @@
       </div>
       <h2 class="Footer-h2">Estoy a un mensaje de distancia</h2>
       <div class="Footer-enlaces">
-        <a href="" class="Footer-gmail">bego@gmail.com</a>
-        <a href="" class="Footer-linkedin">Linkedin</a>
+        <a href="#" title="Contactar conmigo" target="_blank"  class="Footer-gmail" rel="noopener noreferrer">bego@gmail.com</a>
+        <a href="#" title="Enlace a mi Linkedin" class="Footer-linkedin" target="_blank" rel="noopener noreferrer">Linkedin</a>
       </div>
-      <div class="Credits">
-        © 2025 Begoña Cardo <br> Hecha con amor y un té matcha al lado
-      </div>
+      <span class="Credits">
+        © 2025 Begoña Cardo <br />
+        Hecha con amor y un té matcha al lado
+      </span>
     </footer>
   </body>
 </html>

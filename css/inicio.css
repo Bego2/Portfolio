@@ -7,62 +7,86 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 812px;
+  height: auto;
+  padding: 4rem 1.6rem;
 }
 
 .H1 {
   display: flex;
-  margin: 4rem 1.25rem;
   word-wrap: break-word;
-  font-size: 2.5rem;
+  font-size: 1.5em; /* 24px */
+  
+}
+
+.Hero-arrow {
+  font-size: 1.5em;
 }
 
 /* __________________
         PROYECTOS 
  ____________________ */
 
-.Proyectos-card {
+
+ .Proyectos {
+  padding: 3rem 1.6rem;
+ }
+
+ .Proyectos-title {
+  font-size: 1.13em; /* 18px ~ */
+  margin-bottom: 1.5rem;
+ }
+
+.Proyectos-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 2.5rem;
+}
+
+.Proyecto-link {
+  text-decoration: none;
+}
+
+.Proyecto {
   display: flex;
   flex-direction: column;
   background-color:rgb(208, 208, 208);
-  margin: 4rem 1.25rem;
-  border-radius: 0.87rem ;
+  border-radius: 0.87rem;
+
 }
 
-.Proyectos-img {
+.Proyecto-img {
   display: flex;
-  height: 380px;
+  min-height: 23rem;
   background-color: rgb(88, 88, 88); 
   border-radius: 0.87rem 0.87rem 0rem 0rem;
 }
 
-.H3 {
-  font-size: 1.8rem;
+.Proyecto-title {
+  font-size: 1.5em;
 }
 
-.Proyectos-textos {
-  height: 210px;
-  margin: 2rem 1.25rem 0rem 1.25rem;
-  border-radius: 0px 0px 0.87rem 0.87rem;
+.Proyecto-txts {
+  height: auto;
+  margin: 2rem 1.25rem;
+  border-radius: 0rem 0rem 0.87rem 0.87rem;
 }
 
-.Proyectos-subtitulo {
-  font-size: 1rem;
+.Proyecto-subtit {
+  font-size: 1em;
   margin: 0.5rem 0rem 0.8rem;
   word-wrap: break-word;
 }
 
-.Proyectos-tags {
+.Proyecto-tags {
   display: flex;
   flex-direction: row;
   gap: 0.6rem;
 }
 
-.Proyectos-tagItem {
+.Proyecto-tag {
   background-color: rgb(241, 241, 241);
-  border-radius: 22px;
+  border-radius: 1.4rem;
   padding: 0.5rem 0.8rem;
   margin-top: 1rem;
-  font-size: 0.9rem;
-
+  font-size: 0.9em;
 }
