@@ -4,14 +4,19 @@
         RESET 
  ____________________ */
 
-/* Custom Properties */
-
 :root {
   --color-primary: black;
   --color-secondary: white;
 
   --tipo-primary: "Inter", Arial, sans-serif;
   --tipo-secondary: Arial, sans-serif;
+  --font-size-lead: 0.875em;
+  --font-size-parrafo: 1em;
+  --font-size-heading-md: 1.5rem;
+  --font-size-large: 2rem;
+
+  --padding-lateral: 1.5rem;
+  --letter-spacing:  0.06rem;
 }
 
 * {
@@ -22,11 +27,8 @@
   vertical-align: baseline;
 }
 
-img,
-picture,
-video,
-iframe,
-figure {
+/* prettier-ignore */
+img, picture, video, iframe, figure {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -51,20 +53,8 @@ html {
   scroll-behavior: smooth; /* Al clickar en un enlace con ancla -> scroll suave a la seccion*/
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-strong,
-i,
-b,
-u,
-em {
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6, p, span, a, i, u, em {
   font-size: 1em;
   font-weight: inherit; /* Heredado de la etiqueta contenedora*/
   font-style: inherit;
@@ -90,17 +80,33 @@ svg {
   font-family: var(--tipo-primary);
   color: var(--tipo-primary);
   background-color: var(--color-secondary);
-  /* line-height: 1.4rem; */
-   /* más acessibilidad */
+  line-height: 1.4;
 }
 
+.Txt-headingLead {
+  font-size: var(--font-size-lead);
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 0.5rem;
+
+}
+
+.Txt-parrafo {
+  font-size: var(--font-size-parrafo);
+}
+
+.Txt-headingMedium {
+  font-size: var(--font-size-heading-md);
+}
+
+.Txt-large {
+  font-size: var(--font-size-large);
+}
 
 /* __________________
         HEADER 
  ____________________ */
 
 .Header {
-  width: 100%;
   background-color: rgb(255, 211, 128);
 }
 
@@ -112,7 +118,7 @@ svg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.625rem;
+  padding: 1rem;
 }
 
 .Header-enlaces {
@@ -135,8 +141,7 @@ svg {
   display: flex;
   flex-direction: column;
   background-color: rgb(234, 234, 234);
-  padding: 3.9rem 1.8rem 1rem;
-
+  padding: 3.9rem 1.8rem var(--padding-lateral);
   height: auto;
 }
 
@@ -145,6 +150,7 @@ svg {
   flex-direction: row;
   gap: 0.6rem;
   align-items: center;
+  letter-spacing:  var(--letter-spacing);
   margin-bottom: 0.5rem;
 }
 
@@ -152,16 +158,16 @@ svg {
   width: 0.9rem;
   height: 0.9rem;
   background-color: black;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 .Footer-leadTxt {
-  font-size: 0.9em;
+  font-size: var(--font-size-lead);
 }
 
 .Footer-h2 {
   padding: 0.3rem 0rem 1rem;
-  font-size: 2.3em;
+  font-size: var(--font-size-large);
 }
 
 .Footer-enlaces {
@@ -183,12 +189,12 @@ svg {
   margin-bottom: 1.25rem;
 }
 
-
 /* ________________________ */
 /*       Media Queries      */
 /* ________________________ */
 
-/* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px */
+/* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px 
+PONER CON VARIANTES :) */
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* Moviles grandes */
@@ -206,8 +212,6 @@ svg {
   /* Pantallas grandes */
 }
 
+/* Si fuera necesario: estilos para tablets: @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) */
 
 
-/* Si fuera necesario: estilos para tablets: @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
- 
- 
