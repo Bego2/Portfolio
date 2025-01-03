@@ -1,4 +1,151 @@
+/* ___________________________ */
+/*       HEADER                */
+/* ___________________________ */
 
+.ProjectHeader-imgContainer {
+  background-color: grey;
+  height: 240px; /* Cambiar */
+}
 
+.ProjectHeader-textos {
+  height: auto;
+  padding: 2rem var(--padding-lateral) 0rem;
+}
 
-/* PROYECTO 1 */
+.ProjectHeader-leadingText {
+  font-size: 1rem;
+}
+
+.ProjectHeader-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ___________________________ */
+/*       INTRO LIST            */
+/* ___________________________ */
+
+.SectionIntro {
+  margin-bottom: 4rem;
+}
+.SectionIntro-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem var(--padding-lateral) 0rem;
+  gap: 2rem;
+}
+
+.SectionIntro-img {
+   /* cambiar */
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+
+.SectionIntro-textBox {
+  font-size: 0.875rem;
+}
+
+.SectionIntro-title {
+  font-weight: bold;
+}
+
+/* ____________________________________ */
+/*   ESTILO GLOBAL DE SECTION          */
+/* _____________________________________*/
+
+.Text-headingLead {
+  margin-bottom: 0rem;
+}
+
+.Text-headingMedium {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.Section-textContainer {
+  height: auto;
+  padding: 4rem var(--padding-lateral);
+}
+
+.Section-imgContainer {
+  background-color: rgb(209, 157, 255);
+  height: 240px; /* Cambiar */
+}
+
+/* ____________________________________ */
+/*     SINOPSIS Y APRENDIZAJES          */
+/* _____________________________________*/
+
+.Section--white {
+  height: auto;
+  color: var(--color-secondary);
+  background-color: rgb(117, 117, 117);
+}
+
+/* ____________________________________ */
+/*                ASIDE                   */
+/* _____________________________________*/
+
+.Aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  height: auto;
+  padding: 3rem var(--padding-lateral);
+  color: var(--color-secondary);
+  background-color: black;
+}
+
+.Aside-link {
+  display: flex;
+  width: 100%;
+}
+
+.Aside-item {
+  height: 200px; /* cambiar */
+  max-width: 800px; /* cambiar */
+  width: 100%;
+
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(104, 104, 104);
+
+  border-radius: 20px; /* cambiar */
+  overflow: hidden;
+}
+
+.Aside-item--nombreA {
+  background-color: rgb(104, 49, 177);
+  /* background-image: url("../img/prueba-aside.webp") ;  */
+  /* cambiar */
+}
+
+.Aside-item--nombreB {
+  background-color: rgb(104, 49, 177);
+  /* background-image: url("../img/prueba-aside-dos.webp") ; */
+  /* cambiar */
+}
+
+.Aside-texts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0.5rem;
+  text-align: center;
+
+}
+
+.Aside-text {
+  font-size: 0.87rem;
+}
+
+.Aside-textTitle {
+  letter-spacing: 0.08rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+ 

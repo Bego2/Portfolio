@@ -10,8 +10,8 @@
 
   --tipo-primary: "Inter", Arial, sans-serif;
   --tipo-secondary: Arial, sans-serif;
-  --font-size-lead: 0.875em;
-  --font-size-parrafo: 1em;
+  --font-size-lead: 0.875rem;
+  --font-size-parrafo: 1rem;
   --font-size-heading-md: 1.5rem;
   --font-size-large: 2rem;
 
@@ -83,22 +83,22 @@ svg {
   line-height: 1.4;
 }
 
-.Txt-headingLead {
+.Text-headingLead {
   font-size: var(--font-size-lead);
   letter-spacing: var(--letter-spacing);
   margin-bottom: 0.5rem;
 
 }
 
-.Txt-parrafo {
+.Text-parrafo {
   font-size: var(--font-size-parrafo);
 }
 
-.Txt-headingMedium {
+.Text-headingMedium {
   font-size: var(--font-size-heading-md);
 }
 
-.Txt-large {
+.Text-large {
   font-size: var(--font-size-large);
 }
 
@@ -161,7 +161,7 @@ svg {
   border-radius: 100%;
 }
 
-.Footer-leadTxt {
+.Footer-leadText {
   font-size: var(--font-size-lead);
 }
 
