@@ -20,9 +20,9 @@
   font-size: 1.5em;
 }
 
-/* __________________
-        PROYECTOS 
- ____________________ */
+/* ______________________
+       CARDS PROYECTOS 
+ ________________________ */
 
 .Proyectos {
   padding: 3rem var(--padding-lateral);
@@ -52,7 +52,7 @@
 
 .Proyecto-img {
   display: flex;
-  min-height: 23rem;
+  min-height: 19rem;
   background-color: rgb(88, 88, 88);
   border-radius: 0.87rem 0.87rem 0rem 0rem;
 }
@@ -63,13 +63,13 @@
 
 .Proyecto-texts {
   height: auto;
-  margin: 2rem 1.25rem;
+  margin: 1rem 1.25rem;
   border-radius: 0rem 0rem 0.87rem 0.87rem;
 }
 
 .Proyecto-subtit {
   font-size: 1em;
-  margin: 0.5rem 0rem 0.8rem;
+  margin: 0.5rem 0rem 0.5rem;
   word-wrap: break-word;
 }
 
@@ -83,7 +83,7 @@
   background-color: rgb(241, 241, 241);
   border-radius: 1.4rem;
   padding: 0.5rem 0.8rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 0.9em;
 }
 

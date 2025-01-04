@@ -151,7 +151,6 @@ svg {
   gap: 0.6rem;
   align-items: center;
   letter-spacing:  var(--letter-spacing);
-  margin-bottom: 0.5rem;
 }
 
 .Circle {
@@ -172,21 +171,21 @@ svg {
 
 .Footer-enlaces {
   display: flex;
+  flex-direction: column;
   font-size: 1.3em;
   padding-bottom: 3.75rem;
-  gap: 5rem;
+  gap: 1rem;
 }
 
-/* .Footer-gmail {
+.Footer-link {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
-.Footer-linkedin {
-} */
 
 .Credits {
   font-size: 0.8em;
   color: grey;
-  margin-bottom: 1.25rem;
 }
 
 /* ________________________ */
@@ -197,7 +196,21 @@ svg {
 PONER CON VARIANTES :) */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Moviles grandes */
+  .Header-nav {
+    padding: 1rem 2rem;
+  }
+
+  .Footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .Footer-h2 {
+    padding: 1rem 0rem 0.5rem;
+  }
+  .Footer-enlaces {
+    flex-direction: row;
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
