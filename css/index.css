@@ -34,6 +34,7 @@
 }
 
 .Proyectos-grid {
+  margin-top: auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
@@ -53,12 +54,17 @@
 .Proyecto-img {
   display: flex;
   min-height: 19rem;
+  max-height: 25rem;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
   background-color: rgb(88, 88, 88);
   border-radius: 0.87rem 0.87rem 0rem 0rem;
 }
 
 .Proyecto-title {
-  font-size: 1.5em;
+  font-size: var(--font-size-heading-md);
+  font-weight: bold;
 }
 
 .Proyecto-texts {
@@ -87,9 +93,4 @@
   font-size: 0.9em;
 }
 
-/* ________________________ */
-/*       Media Queries      */
-/* ________________________ */
-
- 
  

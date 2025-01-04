@@ -10,13 +10,13 @@
 
   --tipo-primary: "Inter", Arial, sans-serif;
   --tipo-secondary: Arial, sans-serif;
-  --font-size-lead: 0.875rem;
   --font-size-parrafo: 1rem;
+  --font-size-lead: 0.875rem;
   --font-size-heading-md: 1.5rem;
   --font-size-large: 2rem;
 
   --padding-lateral: 1.5rem;
-  --letter-spacing:  0.06rem;
+  --letter-spacing: 0.06rem;
 }
 
 * {
@@ -83,21 +83,23 @@ svg {
   line-height: 1.4;
 }
 
-.Text-headingLead {
-  font-size: var(--font-size-lead);
-  letter-spacing: var(--letter-spacing);
-  margin-bottom: 0.5rem;
-
-}
-
 .Text-parrafo {
   font-size: var(--font-size-parrafo);
 }
 
+/* Títulos pequeños */
+.Text-headingLead {
+  font-size: var(--font-size-lead);
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 0.5rem;
+}
+
+/* Títulos medianos */
 .Text-headingMedium {
   font-size: var(--font-size-heading-md);
 }
 
+/* Títulos grandes */
 .Text-large {
   font-size: var(--font-size-large);
 }
@@ -150,7 +152,7 @@ svg {
   flex-direction: row;
   gap: 0.6rem;
   align-items: center;
-  letter-spacing:  var(--letter-spacing);
+  letter-spacing: var(--letter-spacing);
 }
 
 .Circle {
@@ -165,7 +167,7 @@ svg {
 }
 
 .Footer-h2 {
-  padding: 0.3rem 0rem 1rem;
+  padding: 1rem 0rem 0.5rem;
   font-size: var(--font-size-large);
 }
 
@@ -182,7 +184,6 @@ svg {
   text-underline-offset: 0.3rem;
 }
 
-
 .Credits {
   font-size: 0.8em;
   color: grey;
@@ -192,39 +193,145 @@ svg {
 /*       Media Queries      */
 /* ________________________ */
 
-/* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px 
-PONER CON VARIANTES :) */
+/* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px */
 
+/* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {
+  /* Textos*/
+  .Text-parrafo {
+    font-size: 1.125rem;
+  }
+
+  .Text-headingLead {
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+  }
+
+  /* Nav y Footer */
   .Header-nav {
-    padding: 1rem 2rem;
+    padding: 1.8rem;
   }
 
   .Footer {
-    padding: 2rem 1.5rem;
+    padding: 4.1rem 1.8rem 1.5rem;
+    /*       3.9rem 1.8rem 1.5rem en mobile */
   }
 
-  .Footer-h2 {
-    padding: 1rem 0rem 0.5rem;
-  }
   .Footer-enlaces {
     flex-direction: row;
-    gap: 3rem;
   }
 }
 
+/* TABLETS */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Tablets */
+  /* H1 */
+  .TituloUnico {
+    font-size: 1.8rem; /* Antes 24px */
+  }
+  /* Textos */
+  .Text-parrafo {
+    font-size: 1.125rem;
+  }
+
+  .Text-headingLead {
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .Text-headingMedium {
+    font-size: 1.25rem;
+  }
+
+  .Text-large {
+    font-size: 1.5rem;
+  }
+  /* Nav y Footer */
+  .Header-nav {
+    padding: 2rem;
+  }
+
+  .Footer {
+    padding: 4.3rem 2rem 2rem;
+  }
+
+  .Footer-enlaces {
+    flex-direction: row;
+  }
+
+  /* Página Index  */
+
+  .Hero {
+    padding: 4rem 2rem;
+  }
+
+  .Proyectos {
+    padding: 3.2rem 1.8rem;
+    /*  padding: 3.rem 1.8rem;*/
+  }
+
+  .Proyecto-img {
+    min-height: 25rem;
+    /*   min-height: 30rem; */
+  }
 }
 
+/* DESKTOP MEDIO */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  /* Pantallas grandes */
+  /* H1 */
+  .TituloUnico {
+    font-size: 2rem; /* Antes 24px */
+  }
+
+  /* Textos */
+  .Text-parrafo {
+    font-size: 1.2rem;
+  }
+
+  .Text-headingLead {
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .Text-headingMedium {
+    font-size: 1.5rem;
+  }
+
+  .Text-large {
+    font-size: 1.9rem;
+  }
+  /* Nav y Footer */
+  .Header-nav {
+    padding: 2rem;
+  }
+
+  .Footer {
+    padding: 4.3rem 2rem 2rem;
+  }
+
+  .Footer-enlaces {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* Sección Index - [ Proyectos ] */
+
+  .Hero {
+    padding: 4rem 2rem;
+  }
+
+  .Proyectos {
+    padding: 3.2rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .Proyecto-img {
+    min-height: 25rem;
+    /*   min-height: 30rem; */
+  }
 }
 
+/* DESKTOP GRANDE */
 @media (min-width: 1441px) {
-  /* Pantallas grandes */
 }
 
 /* Si fuera necesario: estilos para tablets: @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) */
-
-
