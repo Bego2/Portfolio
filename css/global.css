@@ -17,6 +17,8 @@
 
   --padding-lateral: 1.5rem;
   --letter-spacing: 0.06rem;
+
+  
 }
 
 * {
@@ -108,9 +110,9 @@ svg {
         HEADER 
  ____________________ */
 
-.Header {
-  background-color: rgb(255, 211, 128);
-}
+/* .Header {
+  background-color: rgb(247, 245, 255);
+} */
 
 .Header-logoLink {
   text-decoration: none;
@@ -129,6 +131,8 @@ svg {
   gap: 0.625rem;
   list-style: none;
   /* font-size: 0.9em; */
+ 
+    display: none;
 }
 
 .Header-link {
@@ -179,14 +183,16 @@ svg {
   gap: 1rem;
 }
 
-.Footer-link { /* Afecta a linkedin y correo */
+.Footer-link {
+  /* Afecta a linkedin y correo */
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
-.Footer-linkedin {   /* Es el contenedor [Linkedin] + [flecha] */
+.Footer-linkedin {
+  /* Es el contenedor [Linkedin] + [flecha] */
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 0.2rem;
 }
 
@@ -207,128 +213,132 @@ svg {
 
 /* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* Textos*/
-  .Text-parrafo {
-    font-size: 1.125rem;
-  }
+:root {
+  --font-size-parrafo: 1.125rem;
+  --font-size-heading-md: 1rem;
+  --letter-spacing: 0.08rem;
+}
 
-  .Text-headingLead {
-    font-size: 1rem;
-    letter-spacing: 0.08rem;
-  }
 
   /* Nav y Footer */
   .Header-nav {
-    padding: 1.8rem;
+    padding: 1rem;
+  }
+
+  .Header-enlaces {
+    display: none;
   }
 
   .Footer {
-    padding: 4.1rem 1.8rem 1.5rem;
-    /*       3.9rem 1.8rem 1.5rem en mobile */
+    padding: 4rem 1.8rem 1.5rem;
   }
-
+  .Footer-leadText {
+    font-size: 1rem;
+  }
   .Footer-enlaces {
     flex-direction: row;
+  }
+  .Credits {
+    font-size: .9rem;
   }
 }
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* H1 */
-  .TituloUnico {
-    font-size: 1.8rem; /* Antes 24px */
-  }
-  /* Textos */
-  .Text-parrafo {
-    font-size: 1.125rem;
+
+  :root {
+    --font-size-parrafo: 1.125rem;
+    --font-size-lead: 1rem;
+    --font-size-heading-md: 1.25rem;
+    --font-size-large: 1.5rem;
+  
+    --letter-spacing: 0.08rem;
   }
 
-  .Text-headingLead {
-    font-size: 1rem;
-    letter-spacing: 0.08rem;
-  }
-
-  .Text-headingMedium {
-    font-size: 1.25rem;
-  }
-
-  .Text-large {
-    font-size: 1.5rem;
-  }
   /* Nav y Footer */
   .Header-nav {
-    padding: 2rem;
+    padding: 1rem;
+  }
+
+  .Header-enlaces {
+    display: none;
   }
 
   .Footer {
-    padding: 4.3rem 2rem 2rem;
+    padding: 4rem 2rem 2rem;
+  }
+
+  .Footer-leadText {
+    font-size: 1rem;
   }
 
   .Footer-enlaces {
+    flex-direction: column;
+  }
+  
+  .Footer-textContainer {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 2.5rem;
   }
 
-  /* Página Index  */
-
-  .Hero {
-    padding: 4rem 2rem;
+  .Footer-h2 {
+    max-width: 50%;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
   }
 
-  .Proyectos {
-    padding: 3.2rem 1.8rem;
-    /*  padding: 3.rem 1.8rem;*/
-  }
-
-  .Proyecto-img {
-    min-height: 25rem;
-    /*   min-height: 30rem; */
+    .Footer-enlaces {
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem;
+    padding-bottom: 0;
   }
 }
 
 /* DESKTOP MEDIO */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  /* H1 */
-  .TituloUnico {
-    font-size: 2rem; /* Antes 24px */
+  
+  :root {
+    --font-size-parrafo: 1.125rem;
+    --font-size-lead: 1.125rem;
+    --font-size-heading-md: 1.6rem;
+    --font-size-large: 1.9rem;
+    --letter-spacing: 0.09rem;
   }
+  
 
-  /* Textos */
-  .Text-parrafo {
-    font-size: 1.2rem;
-  }
-
-  .Text-headingLead {
-    font-size: 1rem;
-    letter-spacing: 0.08rem;
-  }
-
-  .Text-headingMedium {
-    font-size: 1.5rem;
-  }
-
-  .Text-large {
-    font-size: 1.9rem;
-  }
   /* Nav y Footer */
   .Header-nav {
-    padding: 2rem;
+    padding: 1.125rem;
+  }
+
+  .Header-enlaces {
+    display: flex;
+    font-size: 1.125rem;
+    gap: 2rem;
   }
 
   .Footer {
-    padding: 2rem;
+    padding: 4rem 2rem 2rem;
+  }
+
+  .Footer-leadText {
+    font-size: 1.2rem;
   }
 
   .Footer-textContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 22rem;
+    gap: 10rem;
     margin-bottom: 2.5rem;
   }
 
-  
   .Footer-h2 {
-    max-width: 35%;
+    max-width: 45%;
     font-size: 3rem;
     line-height: 3.5rem;
   }
@@ -336,26 +346,12 @@ svg {
   .Footer-enlaces {
     flex-direction: column;
     font-size: 1.5rem;
-    gap: 1rem; 
-   padding-bottom: 0;  
-
-  }  
-
-
-  /* Sección Index - [ Proyectos ] */
-
-  .Hero {
-    padding: 4rem 2.4rem;
+    gap: 1rem;
+    padding-bottom: 0;
   }
 
-  .Proyectos {
-    padding: 3.2rem 2rem;
-    gap: 2.5rem;
-  }
-
-  .Proyecto-img {
-    min-height: 25rem;
-    /*   min-height: 30rem; */
+  .Credits {
+    font-size: 1rem;
   }
 }
 
