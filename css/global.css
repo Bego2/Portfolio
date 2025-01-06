@@ -179,9 +179,19 @@ svg {
   gap: 1rem;
 }
 
-.Footer-link {
+.Footer-link { /* Afecta a linkedin y correo */
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+}
+
+.Footer-linkedin {   /* Es el contenedor [Linkedin] + [flecha] */
+  display: flex;
+  align-items: center; 
+  gap: 0.2rem;
+}
+
+.Footer-flecha {
+  text-decoration: none;
 }
 
 .Credits {
@@ -305,18 +315,37 @@ svg {
   }
 
   .Footer {
-    padding: 4.3rem 2rem 2rem;
+    padding: 2rem;
+  }
+
+  .Footer-textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22rem;
+    margin-bottom: 2.5rem;
+  }
+
+  
+  .Footer-h2 {
+    max-width: 35%;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 
   .Footer-enlaces {
-    flex-direction: row;
-    gap: 2rem;
-  }
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem; 
+   padding-bottom: 0;  
+
+  }  
+
 
   /* Sección Index - [ Proyectos ] */
 
   .Hero {
-    padding: 4rem 2rem;
+    padding: 4rem 2.4rem;
   }
 
   .Proyectos {
