@@ -17,8 +17,6 @@
 
   --padding-lateral: 1.5rem;
   --letter-spacing: 0.06rem;
-
-  
 }
 
 * {
@@ -110,9 +108,9 @@ svg {
         HEADER 
  ____________________ */
 
-/* .Header {
-  background-color: rgb(247, 245, 255);
-} */
+.Header {
+  background-color: rgb(255, 248, 196);
+}
 
 .Header-logoLink {
   text-decoration: none;
@@ -122,17 +120,17 @@ svg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
 
+/* CAMBIAR por clase .isActive */
 .Header-enlaces {
   display: flex;
   flex-direction: row;
   gap: 0.625rem;
   list-style: none;
-  /* font-size: 0.9em; */
- 
-    display: none;
+  display: none;
 }
 
 .Header-link {
@@ -156,7 +154,6 @@ svg {
   flex-direction: row;
   gap: 0.6rem;
   align-items: center;
-  letter-spacing: var(--letter-spacing);
 }
 
 .Circle {
@@ -167,12 +164,13 @@ svg {
 }
 
 .Footer-leadText {
-  font-size: var(--font-size-lead);
+  font-size: var(--font-size-heading-md);
 }
 
 .Footer-h2 {
-  padding: 1rem 0rem 0.5rem;
+  padding: 1rem 0rem 1rem;
   font-size: var(--font-size-large);
+  max-width: 90%;
 }
 
 .Footer-enlaces {
@@ -201,7 +199,7 @@ svg {
 }
 
 .Credits {
-  font-size: 0.8em;
+  font-size: var(--font-size-parrafo);
   color: grey;
 }
 
@@ -213,69 +211,42 @@ svg {
 
 /* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {
-:root {
-  --font-size-parrafo: 1.125rem;
-  --font-size-heading-md: 1rem;
-  --letter-spacing: 0.08rem;
-}
-
+  :root {
+    --font-size-parrafo: 1.125rem;
+    --font-size-lead: 1rem;
+    --font-size-heading-md: 1rem;
+    --letter-spacing: 0.07rem;
+  }
 
   /* Nav y Footer */
   .Header-nav {
     padding: 1rem;
   }
 
-  .Header-enlaces {
-    display: none;
-  }
-
-  .Footer {
-    padding: 4rem 1.8rem 1.5rem;
-  }
-  .Footer-leadText {
-    font-size: 1rem;
-  }
   .Footer-enlaces {
     flex-direction: row;
-  }
-  .Credits {
-    font-size: .9rem;
   }
 }
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1024px) {
-
   :root {
     --font-size-parrafo: 1.125rem;
-    --font-size-lead: 1rem;
     --font-size-heading-md: 1.25rem;
     --font-size-large: 1.5rem;
-  
     --letter-spacing: 0.08rem;
   }
 
   /* Nav y Footer */
-  .Header-nav {
-    padding: 1rem;
-  }
-
-  .Header-enlaces {
-    display: none;
-  }
 
   .Footer {
     padding: 4rem 2rem 2rem;
   }
 
-  .Footer-leadText {
-    font-size: 1rem;
-  }
-
   .Footer-enlaces {
     flex-direction: column;
   }
-  
+
   .Footer-textContainer {
     display: flex;
     flex-direction: row;
@@ -290,7 +261,7 @@ svg {
     line-height: 3.5rem;
   }
 
-    .Footer-enlaces {
+  .Footer-enlaces {
     flex-direction: column;
     font-size: 1.5rem;
     gap: 1rem;
@@ -300,15 +271,12 @@ svg {
 
 /* DESKTOP MEDIO */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  
   :root {
-    --font-size-parrafo: 1.125rem;
     --font-size-lead: 1.125rem;
     --font-size-heading-md: 1.6rem;
-    --font-size-large: 1.9rem;
-    --letter-spacing: 0.09rem;
+    --font-size-large: 2rem;
+    --letter-spacing: 0.85rem;
   }
-  
 
   /* Nav y Footer */
   .Header-nav {
@@ -321,12 +289,45 @@ svg {
     gap: 2rem;
   }
 
-  .Footer {
-    padding: 4rem 2rem 2rem;
+  .Footer-textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .Footer-h2 {
+    max-width: 45%;
+    font-size: 3rem;
   }
 
   .Footer-leadText {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .Footer-enlaces {
+    font-size: 1.7rem;
+    padding-bottom: 0;
+  }
+}
+
+/* DESKTOP GRANDE */
+@media (min-width: 1441px) {
+  :root {
+    --font-size-parrafo: 1.25rem;
+    /* --font-size-lead: 1.6rem; */
+    --font-size-heading-md: 1.8rem;
+    --font-size-large: 2.2rem;
+  }
+
+  /* Nav y Footer */
+  .Header-nav {
+    padding: 1.3rem;
+  }
+
+  .Header-enlaces {
+    display: flex;
+    font-size: 1.4rem;
+    gap: 2.2rem;
   }
 
   .Footer-textContainer {
@@ -334,29 +335,17 @@ svg {
     flex-direction: row;
     align-items: center;
     gap: 10rem;
-    margin-bottom: 2.5rem;
   }
 
   .Footer-h2 {
-    max-width: 45%;
-    font-size: 3rem;
-    line-height: 3.5rem;
+    max-width: 40%;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
   }
 
   .Footer-enlaces {
-    flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 2rem;
     gap: 1rem;
     padding-bottom: 0;
   }
-
-  .Credits {
-    font-size: 1rem;
-  }
 }
-
-/* DESKTOP GRANDE */
-@media (min-width: 1441px) {
-}
-
-/* Si fuera necesario: estilos para tablets: @media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) */
