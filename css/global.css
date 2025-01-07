@@ -15,8 +15,10 @@
   --font-size-heading-md: 1.5rem;
   --font-size-large: 2rem;
 
-  --padding-lateral: 1.5rem;
+  --padding: 1.5rem;
   --letter-spacing: 0.06rem;
+  --border-radius-img: 1.125rem;  
+  --border-radius-icon: 0.6rem;
 }
 
 * {
@@ -145,7 +147,7 @@ svg {
   display: flex;
   flex-direction: column;
   background-color: rgb(234, 234, 234);
-  padding: 3.9rem 1.8rem var(--padding-lateral);
+  padding: 3.9rem var(--padding) var(--padding);
   height: auto;
 }
 
@@ -203,9 +205,9 @@ svg {
   color: grey;
 }
 
-/* ________________________ */
-/*       Media Queries      */
-/* ________________________ */
+/* _____________________________________________*/
+/*  Media Queries para Global e Index           */
+/* _____________________________________________*/
 
 /* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px */
 
@@ -214,7 +216,7 @@ svg {
   :root {
     --font-size-parrafo: 1.125rem;
     --font-size-lead: 1rem;
-    --font-size-heading-md: 1rem;
+    --font-size-heading-md: 1.4rem;
     --letter-spacing: 0.07rem;
   }
 
@@ -232,9 +234,11 @@ svg {
 @media (min-width: 768px) and (max-width: 1024px) {
   :root {
     --font-size-parrafo: 1.125rem;
-    --font-size-heading-md: 1.25rem;
-    --font-size-large: 1.5rem;
+    --font-size-lead: 1rem;
+    --font-size-heading-md: 1.4rem;
+    --font-size-large: 1.8rem;
     --letter-spacing: 0.08rem;
+    --padding: 1.6rem;
   }
 
   /* Nav y Footer */
@@ -257,7 +261,6 @@ svg {
 
   .Footer-h2 {
     max-width: 50%;
-    font-size: 2.6rem;
     line-height: 3.5rem;
   }
 
@@ -272,10 +275,12 @@ svg {
 /* DESKTOP MEDIO */
 @media (min-width: 1025px) and (max-width: 1440px) {
   :root {
-    --font-size-lead: 1.125rem;
+    --font-size-parrafo: 1.125rem;  
+    --font-size-lead: 1.25rem;
     --font-size-heading-md: 1.6rem;
     --font-size-large: 2rem;
-    --letter-spacing: 0.85rem;
+    --letter-spacing: 0.085rem;
+    --padding: 1.8rem;
   }
 
   /* Nav y Footer */
@@ -298,12 +303,12 @@ svg {
 
   .Footer-h2 {
     max-width: 45%;
-    font-size: 3rem;
   }
 
   .Footer-leadText {
     font-size: 1.3rem;
   }
+
   .Footer-enlaces {
     font-size: 1.7rem;
     padding-bottom: 0;
@@ -314,9 +319,10 @@ svg {
 @media (min-width: 1441px) {
   :root {
     --font-size-parrafo: 1.25rem;
-    /* --font-size-lead: 1.6rem; */
+    --font-size-lead: 1.3rem;
     --font-size-heading-md: 1.8rem;
     --font-size-large: 2.2rem;
+    --padding: 3rem;
   }
 
   /* Nav y Footer */
@@ -339,7 +345,6 @@ svg {
 
   .Footer-h2 {
     max-width: 40%;
-    font-size: 3.8rem;
     line-height: 4.5rem;
   }
 

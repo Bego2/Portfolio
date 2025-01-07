@@ -6,12 +6,12 @@
 }
 
 .About-texts {
-  padding: 2rem var(--padding-lateral);
+  padding: 2rem var(--padding);
 }
 
 /* Habilidades y acordeon */
 .Habilidades {
-  padding: 2rem var(--padding-lateral);
+  padding: 2rem var(--padding);
   background-color: rgb(255, 255, 212);
   height: auto;
 }
@@ -46,6 +46,6 @@
 
 /* Aprendizajes */
 .Aprendizajes {
-  padding: 2rem var(--padding-lateral);
+  padding: 2rem var(--padding);
   background-color: rgb(193, 255, 234);
 }

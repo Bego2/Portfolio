@@ -2,16 +2,15 @@
         HERO 
  ____________________ */
 
-.Hero {
+ .Hero {
   background-color: rgb(234, 234, 234);
   display: flex;
   flex-direction: column;
 
-  padding: 4rem var(--padding-lateral);
+  padding: 4rem var(--padding);
 }
 
 .Hero-titulo {
-  /* H1 */
   word-wrap: break-word;
   font-size: 2rem;
 }
@@ -33,12 +32,12 @@
  ________________________ */
 
 .Proyectos {
-  padding: 3rem var(--padding-lateral);
+  padding: 3rem var(--padding);
 }
 
 .Proyectos-title {
-  font-size: var(--font-size-heading-md);
-  margin-bottom: var(--padding-lateral);
+  font-size: var(--font-size-lead);
+  margin-bottom: var(--padding);
   letter-spacing: var(--letter-spacing);
 }
 
@@ -102,6 +101,8 @@
   font-size: 0.9em;
 }
 
+
+
 /* ________________________ */
 /*       Media Queries      */
 /* ________________________ */
@@ -155,11 +156,6 @@
 
 /* DESKTOP MEDIO */
 @media (min-width: 1024px) and (max-width: 1440px) {
-  :root {
-    --font-size-parrafo: 1.125rem;
-    --font-size-heading-md: 1.5rem;
-    --letter-spacing: 0.09rem;
-  }
 
   .Hero {
     padding: 4rem 2.4rem;
@@ -195,11 +191,7 @@
 }
 
 @media (min-width: 1441px) {
-  :root {
-    --font-size-parrafo: 1.25rem;
-    --font-size-heading-md: 1.8rem;
-    --letter-spacing: 0.09rem;
-  }
+ 
 
   .Hero {
     padding: 4rem 2.4rem;
