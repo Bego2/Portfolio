@@ -64,32 +64,7 @@
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .About {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-  }
 
-  .About-imgContainer {
-    width: 50%;
-    background-color: rgb(21, 21, 21);
-    position: sticky;
-    top: 0;
-    height: 100vh;
-  }
-
-  .About-content {
-    width: 50%;
-    overflow: visible;
-    height: auto;
-  }
-
-  .About-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 /* DESKTOP MEDIO */
