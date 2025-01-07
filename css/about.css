@@ -1,8 +1,16 @@
 /* About */
-
+.About {
+  width: 100%;
+}
 .About-imgContainer {
+  width: 100%;
   background-color: grey;
-  height: 240px; /* Cambiar */
+}
+
+.About-img {
+  width: 100%;
+  height: 25rem; /* Cambiar */
+  object-fit: cover;
 }
 
 .About-texts {
@@ -48,4 +56,74 @@
 .Aprendizajes {
   padding: 2rem var(--padding);
   background-color: rgb(193, 255, 234);
+}
+
+/* MÓVILES GRANDES */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .About {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+  .About-imgContainer {
+    width: 50%;
+    background-color: rgb(21, 21, 21);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .About-content {
+    width: 50%;
+    overflow: visible;
+    height: auto;
+  }
+
+  .About-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* DESKTOP MEDIO */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .About {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+  .About-imgContainer {
+    width: 50%;
+    background-color: rgb(21, 21, 21);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .About-content {
+    width: 50%;
+    overflow: visible;
+    height: auto;
+  }
+
+  .About-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+}
+
+/* DESKTOP GRANDE */
+@media (min-width: 1441px) {
 }
