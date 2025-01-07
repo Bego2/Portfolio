@@ -3,11 +3,10 @@
  ____________________ */
 
  .Hero {
-  background-color: rgb(234, 234, 234);
   display: flex;
   flex-direction: column;
-
   padding: 4rem var(--padding);
+  background-color: rgb(234, 234, 234);
 }
 
 .Hero-titulo {
@@ -159,6 +158,7 @@
 
   .Hero {
     padding: 4rem 2.4rem;
+    height: 100vh;
   }
   /* H1 */
   .Hero-titulo {
@@ -191,10 +191,9 @@
 }
 
 @media (min-width: 1441px) {
- 
-
   .Hero {
     padding: 4rem 2.4rem;
+    height: auto;
   }
   /* H1 */
   .Hero-titulo {

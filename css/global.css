@@ -1,4 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+
+@font-face {
+  font-family: 'Robert';
+  src: url('font/roobert.otf') format('.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Robert-bold';
+  src: url('../font/roobert.woff') format('.woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 
 /* __________________
         RESET 
@@ -8,7 +24,7 @@
   --color-primary: black;
   --color-secondary: white;
 
-  --tipo-primary: "Inter", Arial, sans-serif;
+  --tipo-primary: 'Robert', 'Robert-bold', sans-serif;
   --tipo-secondary: Arial, sans-serif;
   --font-size-parrafo: 1rem;
   --font-size-lead: 0.875rem;
