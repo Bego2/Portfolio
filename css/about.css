@@ -17,6 +17,11 @@
   padding: 2rem var(--padding);
 }
 
+.Text-parrafo--about {
+  margin-bottom: var(--padding);
+
+}
+
 /* Habilidades y acordeon */
 .Habilidades {
   padding: 2rem var(--padding);

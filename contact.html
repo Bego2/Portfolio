@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Begoña Cz | Portfolio UX/UI</title>
+    <meta
+      name="description"
+      content="Soy Begoña Cardo y este es mi portfolio. Aquí muestro mis proyectos destacados sobre diseño UX/UI"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, Begoña Cardo, diseño UX-UI, diseño digital, diseño web, Valencia, España, profesional"
+    />
+    <meta name="author" content="Begoña Cardo" />
+    <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados." />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body class="Body">
+    <header class="Header">
+      <nav class="Header-nav">
+        <a href="index.html" title="Volver al inicio" class="Header-logoLink">
+          <span class="Header-logo">B</span>
+        </a>
+
+        <ul class="Header-enlaces">
+          <li>
+            <a href="index.html" title="Ir a página de proyectos" class="Header-link">Proyectos</a>
+          </li>
+          <li>
+            <a href="about.html" title="Información sobre mi" class="Header-link">Información</a>
+          </li>
+          <li>
+            <a href="contact.html" title="Contactar conmigo" class="Header-link Header-link--contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="Main">
+      <div class="Contact-textContainer">
+        <h3 class="Text-headingLead Text-headingLead--contact">CONTACTO</h3>
+        <h2 class="Text-headingMedium Text-headingMedium--contact">Estamos a un mensaje 📫 de distancia</h2>
+      </div>
+      <form action="#" method="get" class="Form">
+        <label for="name">Nombre</label>
+        <input type="text" class="Form-input" id="name" name="name" placeholder="Escribe tu nombre" required />
+
+        <label for="email">Email</label>
+        <input type="email" class="Form-input" id="email" name="email" placeholder="Escribe tu email" required />
+
+        <label for="mensaje">Mensaje</label>
+        <input
+          type="text"
+          class="Form-input Form-input--mensaje"
+          id="mensaje"
+          name="mensaje"
+          placeholder="Escribe aquí tu mensaje"
+          required
+        />
+
+        <input type="button" value="Enviar" class="Form-input Form-btn" />
+      </form>
+    </main>
+  </body>
+</html>
