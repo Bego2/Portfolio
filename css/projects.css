@@ -17,13 +17,12 @@
 .ProjectHeader-imgContainer {
   width: 3rem;
   height: 3rem;
-  background-color: blueviolet;
-  border-radius: var(--border-radius-icon);
+  /* background-color: blueviolet; */
 }
 
 .ProjectHeader-img {
   object-fit: cover;
-  border-radius: var(--border-radius-img);
+  border-radius: var(--border-radius-icon);
 }
 
 .ProjectHeader-title {
@@ -51,9 +50,15 @@
 }
 
 .SectionClave {
-  background-color: rgb(225, 251, 255);
-  padding: 4rem var(--padding);
+  background-color: rgb(246, 246, 246);
+  padding: 3rem var(--padding) 4rem;
+  height: auto;
 }
+
+.SectionClave--second {
+  background-color: var(--color-secondary);
+}
+
 
 .Section-parrafos {
   display: flex;
@@ -61,24 +66,24 @@
   gap: 0.8rem;
 }
 
-
 .Section-textContainer {
   height: auto;
+  margin-bottom: var(--padding);
   /* padding: 4rem var(--padding); */
 }
 
 .Section-imgContainer {
   width: 100%;
-  height: 200px; /* Cambiar */
-  background-color: rgb(209, 157, 255);
-  margin-top: var(--padding);
+  height: auto; /* Cambiar */
+  /* background-color: rgb(209, 157, 255); */
+ 
 }
 
 .SectionClave-img {
   object-fit: cover;
   border-radius: var(--border-radius-img);
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* ____________________________________ */
@@ -140,7 +145,7 @@
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
- 
+
 .Aside-item--nombreB:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);
@@ -172,18 +177,22 @@
 
 /* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {
- 
 }
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* Section Clave */
+  .Section-textGroup {
+    width: 40%;
+    padding-right: var(--padding);
+  }
+
   .Section-textContainer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
 
- 
   .Section-parrafos {
     width: 90%;
   }
@@ -196,13 +205,21 @@
 
 /* DESKTOP MEDIO */
 @media (min-width: 1024px) and (max-width: 1440px) {
+
+    /* Section Clave */
+    .Section-textGroup {
+      width: 40%;
+      padding-right: 2rem;
+    }
+
+
   .ProjectHeader-description {
     width: 80%;
   }
 
   .Section-imgContainer {
     width: 100%;
-    height: 500px; /* Cambiar */
+    height: auto; /* Cambiar */
   }
 
   .Section-textContainer {
@@ -231,6 +248,12 @@
 
 /* DESKTOP GRANDE */
 @media (min-width: 1441px) {
+  /* Section Clave */
+  .Section-textGroup {
+    width: 40%;
+    padding-right: 6rem;
+  }
+
   .ProjectHeader-description {
     width: 80%;
   }

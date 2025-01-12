@@ -13,17 +13,17 @@
   object-fit: cover;
 }
 
-.About-texts {
+/* Intro - Sobre mí */
+.About-intro {
   padding: 2rem var(--padding);
 }
 
 .Text-parrafo--about {
   margin-bottom: var(--padding);
-
 }
 
 /* Habilidades y acordeon */
-.Habilidades {
+.About-skills {
   padding: 2rem var(--padding);
   background-color: rgb(212, 255, 244);
   height: auto;
@@ -58,7 +58,7 @@
 }
 
 /* Aprendizajes */
-.Aprendizajes {
+.About-learnings {
   padding: 2rem var(--padding);
   background-color: rgb(193, 238, 255);
 }
@@ -69,7 +69,6 @@
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1023px) {
-
 }
 
 /* DESKTOP MEDIO */
@@ -104,7 +103,6 @@
 
 /* DESKTOP GRANDE */
 @media (min-width: 1441px) {
-
   .About {
     display: flex;
     flex-direction: row;
@@ -131,7 +129,4 @@
     overflow: visible;
     height: auto;
   }
-
-  
-
 }
