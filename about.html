@@ -32,7 +32,9 @@
         </div>
 
         <ul class="Header-enlaces">
-          <li><a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link">Proyectos</a></li>
+          <li>
+            <a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link">Proyectos</a>
+          </li>
           <li><a href="about.html" title="Información sobre mi" class="Header-link">Información</a></li>
           <li><a href="contact.html" title="Contactar conmigo" class="Header-link">Contacto</a></li>
         </ul>
@@ -44,7 +46,6 @@
         <!-- Imagen -->
         <div class="About-imgContainer">
           <img class="About-img" src="./img/about.svg" alt="retrato chica joven" loading="lazy" />
-
         </div>
 
         <!-- Contenido escrito -->
@@ -96,7 +97,7 @@
                   <span class="material-symbols-outlined Acordeon-icon">add</span>
                 </div>
 
-                <div class="Acordeon-content ">
+                <div class="Acordeon-content">
                   <p class="Text-parrafo">
                     Crear experiencias digitales, inteligentes, accesibles e intuitivas para el usuario. Realizando
                     previamente análisis y estudios de mercado. Detectando las claves que sustentarán las decisiones de
@@ -189,5 +190,33 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+
+      /* ACORDEON. Funcionamiento: Tenemos los padres 'Acordeon-bloque' los seleccionamos todos. 1. Vamos a recorrer cada bloque para poder detectar si el usario le hace click.
+      
+      1.1. Declaramos las constantes aquí y así para poder seleccionar específicamente los elemerntos de bloque, por eso bloque.querySelector. Si no solo se seleccionaría el primer acordeón.
+  
+      2. Si le hacen click a un bloque: se activa el estado isActive (se despliega el acordeon), el toggle es clave porque permite replegarlo si es incomodo para el usuario
+      
+      3. Se ejecuta una condicional para cambiar los iconos si la clase es isActive, el icono es - y si esta el acordeon visible el icono es + */
+
+      const bloques = document.querySelectorAll(".Acordeon-bloque");
+
+      bloques.forEach((bloque) => { //1
+        const btnBloque = bloque.querySelector(".Acordeon-boton");
+        const iconBloque = bloque.querySelector(".Acordeon-icon");
+        const content = bloque.querySelector(".Acordeon-content");
+
+        btnBloque.addEventListener("click", () => { //2
+          content.classList.toggle("isActive");
+          if (content.classList.contains("isActive")) { //3
+            iconBloque.textContent = "remove";
+          } else {
+            iconBloque.textContent = "add";
+          }
+        });
+      });
+    </script>
   </body>
 </html>

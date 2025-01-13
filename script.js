@@ -8,22 +8,6 @@ const iconHeader = document.querySelector(".material-symbols-outlined");
 const links = document.querySelectorAll(".Header-link");
 const actualUrl = window.location.href;
 
-
-const bloque = document.querySelectorAll(".Acordeon-bloque");
-const btnBloque = document.querySelectorAll(".Acordeon-boton");
-
-btnBloque.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-
-        // bloque.forEach ((cadaBloque) => {
-        //     cadaBloque.querySelector(".Acordeon-content").classList.remove("isActive");
-        // })
-
-        const content = bloque[i].querySelector(".Acordeon-content")
-        content.classList.toggle("isActive");
-    });
-});
-
 btnHeader.addEventListener("click", () => {
   linksHeader.classList.toggle("Activa");
   document.body.classList.toggle("No-scroll");
@@ -38,15 +22,17 @@ btnHeader.addEventListener("click", () => {
 links.forEach((link) => {
   const href = link.getAttribute("href");
 
-  if (actualUrl.includes(href) || (href === "#SeccionProyectos" && actualUrl.includes("index.html"))) {
+  if (actualUrl.includes("index.html") && href === "index.html#SeccionProyectos") {
+    link.classList.add("u-black");
+  } else if (actualUrl.includes(href)) {
     link.classList.add("u-black");
   } else {
     link.classList.remove("u-black");
   }
 
-link.addEventListener("click", () => {
+  link.addEventListener("click", () => {
     linksHeader.classList.remove("Activa");
     document.body.classList.remove("No-scroll");
-});
-
+    iconHeader.textContent = "add";
+  });
 });
