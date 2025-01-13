@@ -1,13 +1,11 @@
-
 @font-face {
-  font-family: 'Robert';
-  src: url(../font/roobert.woff) format('truetype');
+  font-family: "Robert";
+  src: url(../font/roobert.woff) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 
 /* __________________
         RESET 
@@ -17,7 +15,7 @@
   --color-primary: black;
   --color-secondary: white;
 
-  --tipo-primary: 'Robert', 'Inter', sans-serif;
+  --tipo-primary: "Robert", "Inter", sans-serif;
   --tipo-secondary: Arial, sans-serif;
   --font-size-parrafo: 1rem;
   --font-size-lead: 0.875rem;
@@ -26,7 +24,7 @@
 
   --padding: 1.5rem;
   --letter-spacing: 0.06rem;
-  --border-radius-img: 1.125rem;  
+  --border-radius-img: 1.125rem;
   --border-radius-icon: 0.6rem;
 }
 
@@ -50,6 +48,7 @@ img, picture, video, iframe, figure {
 /* Enlaces me funcionarán como cajas (block) salvo los enlaces que están dentro de párrafos (inline) */
 a {
   display: block;
+  cursor: pointer;
 }
 
 p a {
@@ -73,6 +72,10 @@ h1, h2, h3, h4, h5, h6, p, span, a, i, u, em {
   color: inherit;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
 ::selection {
   background-color: var(--color-primary);
   color: var(--color-secondary);
@@ -96,6 +99,10 @@ svg {
   color: var(--tipo-primary);
   background-color: var(--color-secondary);
   line-height: 1.4;
+}
+
+.Body.No-scroll {
+overflow: hidden;
 }
 
 .Text-parrafo {
@@ -123,38 +130,44 @@ svg {
         HEADER 
  ____________________ */
 
-.Header {
-  background-color: rgb(255, 248, 196);
-}
-
-.Header-logoLink {
-  text-decoration: none;
-}
-
 .Header-nav {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 248, 196);
+  padding: 1rem;
+}
+
+.Header-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
 }
 
-/* CAMBIAR por clase .isActive */
 .Header-enlaces {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.625rem;
-  list-style: none;
   display: none;
+  color: grey;
+  font-weight: bold;
 }
 
-.Header-link {
-  text-decoration: none;
+.u-black {
+  color: var(--color-primary);
 }
 
 
+.Header-enlaces.Activa {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-heading-md);
+  gap: 2rem;
+}
 
+.Header-icon {
+  display: block;
+}
 /* __________________
         FOOTER 
  ____________________ */
@@ -289,9 +302,9 @@ svg {
 }
 
 /* DESKTOP MEDIO */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   :root {
-    --font-size-parrafo: 1.125rem;  
+    --font-size-parrafo: 1.125rem;
     --font-size-lead: 1.25rem;
     --font-size-heading-md: 1.6rem;
     --font-size-large: 2rem;
@@ -301,13 +314,37 @@ svg {
 
   /* Nav y Footer */
   .Header-nav {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 248, 196);
     padding: 1.125rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  /* CAMBIAR por clase .isActive */
   .Header-enlaces {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
     font-size: 1.125rem;
     gap: 2rem;
+    padding: 0;
+  }
+
+  .Header-enlaces.Activa {
+    height: auto;
+    flex-direction: row;
+    font-size: 1.125rem;
+  }
+
+
+  .Header-icon {
+    display: none;
   }
 
   .Footer-textContainer {
@@ -342,8 +379,22 @@ svg {
   }
 
   /* Nav y Footer */
+
   .Header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 1.3rem;
+  }
+
+  /* CAMBIAR por clase .isActive */
+  .Header-enlaces {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
+    list-style: none;
   }
 
   .Header-enlaces {

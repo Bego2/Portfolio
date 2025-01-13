@@ -24,12 +24,15 @@
   <body class="Body">
     <header class="Header">
       <nav class="Header-nav">
-        <a href="index.html" title="Volver al inicio" class="Header-logoLink">
-          <span class="Header-logo">B</span>
-        </a>
+        <div class="Header-items">
+          <a href="index.html" title="Volver al inicio" class="Header-logo"> B </a>
+          <button class="Header-icon">
+            <span class="material-symbols-outlined">add</span>
+          </button>
+        </div>
 
         <ul class="Header-enlaces">
-          <li><a href="#SeccionProyectos" title="Ir a página de proyectos" class="Header-link">Proyectos</a></li>
+          <li><a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link u-black">Proyectos</a></li>
           <li><a href="about.html" title="Información sobre mi" class="Header-link">Información</a></li>
           <li><a href="contact.html" title="Contactar conmigo" class="Header-link">Contacto</a></li>
         </ul>
@@ -39,14 +42,15 @@
     <main class="Main">
       <section class="Hero">
         <h1 class="Hero-titulo">
-          ¡Hola! Soy 🌼 Begoña Cardo y me encanta crear entornos ⚡ digitales que generen un impacto 🤟🏼 positivo en las personas
+          ¡Hola! Soy 🌼 Begoña Cardo y me encanta crear entornos ⚡ digitales que generen un impacto 🤟🏼 positivo en las
+          personas
         </h1>
 
         <h2 class="Hero-subtitulo">Aquí encontrarás una selección de mis proyectos de diseño gráfico y UX-UI</h2>
 
         <a href="#SeccionProyectos">
-        <span class="material-symbols-outlined Hero-arrow"> arrow_downward </span>
-      </a>
+          <span class="material-symbols-outlined Hero-arrow"> arrow_downward </span>
+        </a>
       </section>
 
       <section class="Proyectos" id="SeccionProyectos">
@@ -57,15 +61,18 @@
           <article class="Proyecto">
             <a href="projects/project-uno.html" title="Visita el proyecto Steez" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
-                <img class="Proyecto-img" src="./img/miniatura-uno.svg" alt="una carita sonriente y un texto a su derecha de color neon sobre fondo negro" loading="lazy" />
+                <img
+                  class="Proyecto-img"
+                  src="./img/miniatura-uno.svg"
+                  alt="una carita sonriente y un texto a su derecha de color neon sobre fondo negro"
+                  loading="lazy"
+                />
               </div>
 
               <div class="Proyecto-texts">
                 <h3 class="Proyecto-title">Steez</h3>
 
-                <h5 class="Proyecto-subtit">
-                  ¿Cómo sería diseñar una app de intercambio de sneakers? 
-                </h5>
+                <h5 class="Proyecto-subtit">¿Cómo sería diseñar una app de intercambio de sneakers?</h5>
 
                 <div class="Proyecto-tags">
                   <span class="Proyecto-tag">Diseño de interfaz</span>
@@ -80,15 +87,18 @@
           <article class="Proyecto">
             <a href="projects/project-dos.html" title="Visita el proyecto Brillo" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
-                <img class="Proyecto-img"  src="./img/miniatura-dos.svg" alt="brillo, escrito en letras blancas sobre fondo verde" loading="lazy" />
+                <img
+                  class="Proyecto-img"
+                  src="./img/miniatura-dos.svg"
+                  alt="brillo, escrito en letras blancas sobre fondo verde"
+                  loading="lazy"
+                />
               </div>
 
               <div class="Proyecto-texts">
                 <h3 class="Proyecto-title">Brillo</h3>
 
-                <h5 class="Proyecto-subtit">
-                  ¿Cómo sería diseñar la web de un retiro? 
-                </h5>
+                <h5 class="Proyecto-subtit">¿Cómo sería diseñar la web de un retiro?</h5>
 
                 <div class="Proyecto-tags">
                   <span class="Proyecto-tag">Diseño web</span>
@@ -126,5 +136,6 @@
         Diseñada con pasión mientras bebía té matcha
       </span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
