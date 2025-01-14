@@ -155,7 +155,7 @@ overflow: hidden;
 }
 
 
-.Header-enlaces.Activa {
+.Header-enlaces.isActive {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -325,7 +325,7 @@ overflow: hidden;
     align-items: center;
   }
 
-  /* CAMBIAR por clase .isActive */
+  /* CAMBIAR por clase .isOpen */
   .Header-enlaces {
     display: flex;
     flex-direction: row;
@@ -336,7 +336,7 @@ overflow: hidden;
     padding: 0;
   }
 
-  .Header-enlaces.Activa {
+  .Header-enlaces.isActive {
     height: auto;
     flex-direction: row;
     font-size: 1.125rem;
@@ -388,7 +388,7 @@ overflow: hidden;
     padding: 1.3rem;
   }
 
-  /* CAMBIAR por clase .isActive */
+  /* CAMBIAR por clase .isOpen */
   .Header-enlaces {
     display: flex;
     flex-direction: row;

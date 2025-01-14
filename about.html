@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <script src="./js/global.js" defer></script>
+    <script src="./js/about.js" defer></script>
   </head>
 
   <body class="Body">
@@ -26,12 +28,12 @@
       <nav class="Header-nav">
         <div class="Header-items">
           <a href="index.html" title="Volver al inicio" class="Header-logo"> B </a>
-          <button class="Header-icon">
-            <span class="material-symbols-outlined">add</span>
+          <button class="Header-icon" id="Header-boton">
+            <span class="material-symbols-outlined" id="Header-icono">add</span>
           </button>
         </div>
 
-        <ul class="Header-enlaces">
+        <ul class="Header-enlaces" id="Header-listaEnlaces">
           <li>
             <a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link">Proyectos</a>
           </li>
@@ -72,12 +74,12 @@
 
             <div class="Acordeon">
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton">
+                <div class="Acordeon-boton" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">Diseño visual</h3>
-                  <span class="material-symbols-outlined Acordeon-icon"> add </span>
+                  <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono"> add </span>
                 </div>
 
-                <div class="Acordeon-content isActive">
+                <div class="Acordeon-content isOpen" id="Acordeon-contenido">
                   <p class="Text-parrafo">
                     Está parte de aquí me apasiona. El poder del diseño visual, ¡ay qué divertido! Tanto crear la
                     identidad de marca, como adaptar la marca existente a una interfaz digital. Con consistencia y
@@ -92,12 +94,12 @@
               </div>
 
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton">
+                <div class="Acordeon-boton" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">UX/UI</h3>
-                  <span class="material-symbols-outlined Acordeon-icon">add</span>
+                  <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono">add</span>
                 </div>
 
-                <div class="Acordeon-content">
+                <div class="Acordeon-content" id="Acordeon-contenido">
                   <p class="Text-parrafo">
                     Crear experiencias digitales, inteligentes, accesibles e intuitivas para el usuario. Realizando
                     previamente análisis y estudios de mercado. Detectando las claves que sustentarán las decisiones de
@@ -113,12 +115,12 @@
               </div>
 
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton">
+                <div class="Acordeon-boton" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">Diseño web</h3>
-                  <span class="material-symbols-outlined Acordeon-icon"> add </span>
+                  <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono"> add </span>
                 </div>
 
-                <div class="Acordeon-content">
+                <div class="Acordeon-content" id="Acordeon-contenido">
                   <p class="Text-parrafo">
                     Contenta de poder crear páginas web organizadas y accesibles, adaptadas a distintos tipos de
                     pantalla, fieles al diseño de marca y dándoles vida gracias a las interacciones.
@@ -132,12 +134,12 @@
               </div>
 
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton">
+                <div class="Acordeon-boton" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">Herramientas</h3>
-                  <span class="material-symbols-outlined Acordeon-icon"> add </span>
+                  <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono"> add </span>
                 </div>
 
-                <div class="Acordeon-content">
+                <div class="Acordeon-content" id="Acordeon-contenido">
                   <p class="Text-parrafo">
                     Mis herramientas de trabajo me ayudan en mis procesos tanto personales como en equipo. Me apoyo en
                     aplicaciones y programas que permiten elevar los resultados a un nuevo nivel.
@@ -188,35 +190,5 @@
         Diseñada con pasión mientras bebía té matcha
       </span>
     </footer>
-
-    <script src="script.js"></script>
-
-    <script>
-
-      /* ACORDEON. Funcionamiento: Tenemos los padres 'Acordeon-bloque' los seleccionamos todos. 1. Vamos a recorrer cada bloque para poder detectar si el usario le hace click.
-      
-      1.1. Declaramos las constantes aquí y así para poder seleccionar específicamente los elemerntos de bloque, por eso bloque.querySelector. Si no solo se seleccionaría el primer acordeón.
-  
-      2. Si le hacen click a un bloque: se activa el estado isActive (se despliega el acordeon), el toggle es clave porque permite replegarlo si es incomodo para el usuario
-      
-      3. Se ejecuta una condicional para cambiar los iconos si la clase es isActive, el icono es - y si esta el acordeon visible el icono es + */
-
-      const bloques = document.querySelectorAll(".Acordeon-bloque");
-
-      bloques.forEach((bloque) => { //1
-        const btnBloque = bloque.querySelector(".Acordeon-boton");
-        const iconBloque = bloque.querySelector(".Acordeon-icon");
-        const content = bloque.querySelector(".Acordeon-content");
-
-        btnBloque.addEventListener("click", () => { //2
-          content.classList.toggle("isActive");
-          if (content.classList.contains("isActive")) { //3
-            iconBloque.textContent = "remove";
-          } else {
-            iconBloque.textContent = "add";
-          }
-        });
-      });
-    </script>
   </body>
 </html>
