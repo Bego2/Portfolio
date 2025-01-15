@@ -121,7 +121,7 @@ padding: 2rem var(--padding) 4rem;
   width: 100%;
 }
 
-.Aside-item {
+.Aside-festival {
   height: 200px; /* cambiar */
   max-width: 800px; /* cambiar */
   width: 100%;
@@ -135,24 +135,24 @@ padding: 2rem var(--padding) 4rem;
   overflow: hidden;
 }
 
-.Aside-item--nombreA {
+.Aside-festival--nombreA {
   background-color: rgb(104, 49, 177);
   /* background-image: url("../img/prueba-aside.webp") ;  */
   /* cambiar */
 }
 
-.Aside-item--nombreB {
+.Aside-festival--nombreB {
   background-color: rgb(104, 49, 177);
   /* background-image: url("../img/prueba-aside-dos.webp") ; */
   /* cambiar */
 }
 
-.Aside-item--nombreA:hover {
+.Aside-festival--nombreA:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
 
-.Aside-item--nombreB:hover {
+.Aside-festival--nombreB:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
@@ -202,24 +202,24 @@ padding: 2rem var(--padding) 4rem;
  }
  
 /* Proyecto 3 */
-.Proyecto--tres {
+.Proyecto--festival {
   background-color:rgb(52, 72, 255);
   color: var(--color-secondary);
  }
 
- .Proyecto-tag--tres {
+ .Proyecto-tag--festival {
   background-color: rgb(151, 161, 255);
  }
  
 
 /* Proyecto 4 */
 
-.Proyecto--cuatro {
+.Proyecto--lugar {
  background-color: rgb(217 213 217); 
  color: rgb(104, 100, 132);
 }
 
-.Proyecto-tag--cuatro {
+.Proyecto-tag--lugar {
   background-color: rgb(241 241 241);
  }
 
@@ -323,7 +323,7 @@ padding: 2rem var(--padding) 4rem;
     padding: 3rem 9rem;
   }
 
-  .Aside-item {
+  .Aside-festival {
     height: 250px;
   }
 }
@@ -375,7 +375,7 @@ padding: 2rem var(--padding) 4rem;
     gap: 5rem;
   }
 
-  .Aside-item {
+  .Aside-festival {
     height: 250px;
   }
 }
