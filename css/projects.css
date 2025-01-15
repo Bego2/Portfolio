@@ -88,7 +88,7 @@
 /*                CREDITOS              */
 /* _____________________________________*/
 .SectionClave--creditos {
-padding: 2rem var(--padding) 4rem;
+  padding: 2rem var(--padding) 4rem;
 }
 
 .Creditos-titulos {
@@ -179,55 +179,49 @@ padding: 2rem var(--padding) 4rem;
 /*      PROJECTOS en INDEX      /
 /* ___________________________ */
 
-
 /* Proyecto 1 */
 .Proyecto--oscuro {
-  background-color:rgb(39, 39, 39) ; 
+  background-color: rgb(39, 39, 39);
   color: var(--color-secondary);
- }
+}
 
- .Proyecto-tag--oscuro {
-  background-color:rgb(99 99 99)
- }
- 
- 
+.Proyecto-tag--oscuro {
+  background-color: rgb(99 99 99);
+}
+
 /* Proyecto 2 */
 .Proyecto--dos {
-  background-color:rgb(83, 105, 53);
+  background-color: rgb(83, 105, 53);
   color: var(--color-secondary);
- }
+}
 
- .Proyecto-tag--verde {
+.Proyecto-tag--verde {
   background-color: rgb(120 144 88);
- }
- 
+}
+
 /* Proyecto 3 */
 .Proyecto--festival {
-  background-color:rgb(52, 72, 255);
+  background-color: rgb(52, 72, 255);
   color: var(--color-secondary);
- }
+}
 
- .Proyecto-tag--festival {
+.Proyecto-tag--festival {
   background-color: rgb(151, 161, 255);
- }
- 
+}
 
 /* Proyecto 4 */
 
 .Proyecto--lugar {
- background-color: rgb(217 213 217); 
- color: rgb(104, 100, 132);
+  background-color: rgb(164 151 255);
+  color: var(--color-secondary);
+  color: var(--color-secondary);
+
 }
 
 .Proyecto-tag--lugar {
-  background-color: rgb(241 241 241);
- }
-
-
-
-
-
-
+  background-color:  rgb(217, 212, 255);
+  color: rgb(93, 80, 197);
+}
 
 /* ________________________ */
 /*       Media Queries      */
@@ -268,7 +262,7 @@ padding: 2rem var(--padding) 4rem;
     gap: 2rem;
     margin-left: 4rem;
   }
-  
+
   .Aside {
     display: flex;
     flex-direction: row;

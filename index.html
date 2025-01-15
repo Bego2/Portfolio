@@ -15,11 +15,11 @@
     <meta name="author" content="Begoña Cardo" />
     <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados." />
 
+    <link rel="icon" type="image/webp" href="./img/favicon.webp" sizes="16x16" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <script src="./js/global.js" defer></script>
-
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
@@ -28,14 +28,20 @@
     <header class="Header">
       <nav class="Header-nav">
         <div class="Header-items">
-          <a href="index.html" title="Volver al inicio" class="Header-logo"> B </a>
+          <a href="index.html" title="Volver al inicio" class="Header-logo">
+            <img class="Logo" src="img/logo-letra.webp" alt="logotipo en negro, una b con letras góticas" />
+          </a>
           <button class="Header-icon" id="Header-boton">
             <span class="material-symbols-outlined" id="Header-icono">add</span>
           </button>
         </div>
 
         <ul class="Header-enlaces" id="Header-listaEnlaces">
-          <li><a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link u-black">Proyectos</a></li>
+          <li>
+            <a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link u-black"
+              >Proyectos</a
+            >
+          </li>
           <li><a href="about.html" title="Información sobre mi" class="Header-link">Información</a></li>
           <li><a href="contact.html" title="Contactar conmigo" class="Header-link">Contacto</a></li>
         </ul>
@@ -66,7 +72,7 @@
               <div class="Proyecto-imgContainer">
                 <img
                   class="Proyecto-img"
-                  src="./img/miniatura-steez.svg"
+                  src="./img/thumbnail-steez.webp"
                   alt="una carita sonriente y un texto a su derecha de color neon sobre fondo negro"
                   loading="lazy"
                 />
@@ -92,7 +98,7 @@
               <div class="Proyecto-imgContainer">
                 <img
                   class="Proyecto-img"
-                  src="./img/miniatura-brillo.svg"
+                  src="./img/thumbnail-brillo.webp"
                   alt="brillo, escrito en letras blancas sobre fondo verde"
                   loading="lazy"
                 />
@@ -116,12 +122,7 @@
           <article class="Proyecto Proyecto--festival">
             <a href="project.html?id=3" title="Visita el proyecto Item" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
-                <img
-                  class="Proyecto-img"
-                  src="./img/miniatura-festival.svg"
-                  alt=""
-                  loading="lazy"
-                />
+                <img class="Proyecto-img" src="./img/thumbnail-festival.webp" alt="" loading="lazy" />
               </div>
 
               <div class="Proyecto-texts">
@@ -138,32 +139,26 @@
             </a>
           </article>
 
-              <!-- Proyecto 4 -->
-              <article class="Proyecto Proyecto--lugar">
-                <a href="project.html?id=4" title="Visita el proyecto cuatro" class="Proyecto-link">
-                  <div class="Proyecto-imgContainer">
-                    <img
-                      class="Proyecto-img"
-                      src="./img/miniatura-lugar.svg"
-                      alt=""
-                      loading="lazy"
-                    />
-                  </div>
-    
-                  <div class="Proyecto-texts">
-                    <h3 class="Proyecto-title">Fuera de lugar</h3>
-    
-                    <h5 class="Proyecto-subtit">¿Cómo sería diseñar un disco musical y su campaña de lanzamiento?</h5>
-    
-                    <div class="Proyecto-tags">
-                      <span class="Proyecto-tag Proyecto-tag--lugar">Dirección creativa</span>
-                      <span class="Proyecto-tag Proyecto-tag--lugar">Portadas musicales</span>
-                      <span class="Proyecto-tag Proyecto-tag--lugar">Comunicación gráfica</span>
-                    </div>
-                  </div>
-                </a>
-              </article>
+          <!-- Proyecto 4 -->
+          <article class="Proyecto Proyecto--lugar">
+            <a href="project.html?id=4" title="Visita el proyecto cuatro" class="Proyecto-link">
+              <div class="Proyecto-imgContainer">
+                <img class="Proyecto-img" src="./img/thumbnail-lugar.webp" alt="" loading="lazy" />
+              </div>
 
+              <div class="Proyecto-texts">
+                <h3 class="Proyecto-title">Fuera de lugar</h3>
+
+                <h5 class="Proyecto-subtit">¿Cómo sería diseñar un disco musical y su campaña de lanzamiento?</h5>
+
+                <div class="Proyecto-tags">
+                  <span class="Proyecto-tag Proyecto-tag--lugar">Dirección creativa</span>
+                  <span class="Proyecto-tag Proyecto-tag--lugar">Portadas musicales</span>
+                  <span class="Proyecto-tag Proyecto-tag--lugar">Comunicación gráfica</span>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
       </section>
     </main>
@@ -192,6 +187,5 @@
         Diseñada con pasión mientras bebía té matcha
       </span>
     </footer>
-  
   </body>
 </html>

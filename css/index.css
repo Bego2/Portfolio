@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   padding: 4rem var(--padding);
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(243, 243, 255);
 }
 
 .Hero-titulo {
@@ -38,6 +38,7 @@
   font-size: var(--font-size-lead);
   margin-bottom: var(--padding);
   letter-spacing: var(--letter-spacing);
+  color: grey;
 }
 
 .Proyectos-grid {

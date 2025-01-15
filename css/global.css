@@ -12,8 +12,12 @@
  ____________________ */
 
 :root {
-  --color-primary: black;
-  --color-secondary: white;
+  --color-primary: rgb(17, 16, 61);
+  --color-secondary: rgb(253, 253, 245);
+  --color-gris:  rgb(231, 231, 234);
+  --color-gris-big:  rgb(130, 129, 142);
+
+
 
   --tipo-primary: "Robert", "Inter", sans-serif;
   --tipo-secondary: Arial, sans-serif;
@@ -71,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, i, u, em {
   text-decoration: none;
   color: inherit;
 }
-
+ 
 button {
   background-color: transparent;
   cursor: pointer;
@@ -96,7 +100,7 @@ svg {
   flex-direction: column;
   min-height: 100vh;
   font-family: var(--tipo-primary);
-  color: var(--tipo-primary);
+  color: var(--color-primary);
   background-color: var(--color-secondary);
   line-height: 1.4;
 }
@@ -114,6 +118,7 @@ overflow: hidden;
   font-size: var(--font-size-lead);
   letter-spacing: var(--letter-spacing);
   margin-bottom: 0.5rem;
+  color: grey;
 }
 
 /* Títulos medianos */
@@ -133,7 +138,6 @@ overflow: hidden;
 .Header-nav {
   width: 100%;
   height: auto;
-  background-color: rgb(255, 248, 196);
   padding: 1rem;
 }
 
@@ -154,7 +158,6 @@ overflow: hidden;
   color: var(--color-primary);
 }
 
-
 .Header-enlaces.isActive {
   height: 100vh;
   display: flex;
@@ -165,9 +168,21 @@ overflow: hidden;
   gap: 2rem;
 }
 
+/* Cuando estamos dentro de un proyecto, mejor que se muestren en negro y no todos de gris, pues parecería un error (quería mantener la barra minimalista y no queria añadir un enlace en la nav bar por cada proyecto, por lo que no existe una sección concreta).  */
+.Header-enlaces--proyectos {
+color: black;
+}
+
+.Logo {
+  /* content: url('logo-letra.webp'); */
+  width: 2rem;  
+   height: 2rem; 
+}
 .Header-icon {
   display: block;
 }
+
+
 /* __________________
         FOOTER 
  ____________________ */
@@ -175,7 +190,9 @@ overflow: hidden;
 .Footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(234, 234, 234);
+  /* background-color: rgb(234, 234, 234); */
+    background-color: var(--color-gris);
+
   padding: 3.9rem var(--padding) var(--padding);
   height: auto;
 }
@@ -231,7 +248,7 @@ overflow: hidden;
 
 .Credits {
   font-size: var(--font-size-parrafo);
-  color: grey;
+  color: var(--color-gris-big);
 }
 
 /* _____________________________________________*/
@@ -316,7 +333,6 @@ overflow: hidden;
   .Header-nav {
     width: 100%;
     height: auto;
-    background-color: rgb(255, 248, 196);
     padding: 1.125rem;
 
     display: flex;

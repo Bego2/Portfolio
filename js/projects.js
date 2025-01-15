@@ -3,26 +3,27 @@ const proyectos = [
     id: 1,
     icono: "./img/steez-iconotitulo.svg",
     titulo: "Steez",
+    alt: "icono de steez, carita sonriente en negro sobre fondo neon",
     descripcion:
       "Identidad gráfica y diseño de interfaz para una aplicación de intercambio y alquiler de sneakers.Exchange & Shine se convierte en el lema de personas jóvenes que aman la moda, las sneakers y la sostenibilidad.",
-    alt: "icono de steez, carita sonriente en negro sobre fondo neon",
 
     heading1: "Llamando la atención a través de la identidad",
-    text1:"La identidad visual se conforma por una paleta de color de colores neutros, gris y negro con un acento de color neón. Las tipografías combinadas son sin serifa, pero contrastadas y desenfadadas.",
-    img1: "./img/steez-pantallasmobile.svg",
+    text1:
+      "La identidad visual se conforma por una paleta de color de colores neutros, gris y negro con un acento de color neón. Las tipografías combinadas son sin serifa, pero contrastadas y desenfadadas.",
+    img1: "./img/steez-pantallasmobile.webp",
     alt1: "tres pantallas formato mobile, mostrando la identidad de steez",
 
     heading2: "Iconos que no dejan indifente",
-    text2:"Me encantó realizar el set de iconos. Realizados vectorlialmente con Illustrator. Iconos asimétricos y afilados que aportan a la identidad gráfica un toque canalla, llamativo y diferenciador.",
-    img2: "./img/steez-iconos.svg",
+    text2:
+      "Me encantó realizar el set de iconos. Realizados vectorlialmente con Illustrator. Iconos asimétricos y afilados que aportan a la identidad gráfica un toque canalla, llamativo y diferenciador.",
+    img2: "./img/steez-iconos.webp",
     alt2: "iconos de steez y una pantalla móvil donde se muestran estos iconos aplicados",
 
     heading3: "La importancia de priorizar",
-    text3: "Previamente a la realización de las pantallas estuvimos evaluando cómo podíamos realizar una aplicación atractiva para el público joven, sin que dejase de ser intuitiva y fácil de usar. Gracias a la pirámide UX y al árbol de funcionalidades logramos nuestro objetivo.",
-    img3: "./img/steez-arbolfuncionalidades.svg",
+    text3:
+      "Previamente a la realización de las pantallas estuvimos evaluando cómo podíamos realizar una aplicación atractiva para el público joven, sin que dejase de ser intuitiva y fácil de usar. Gracias a la pirámide UX y al árbol de funcionalidades logramos nuestro objetivo.",
+    img3: "./img/steez-arbolfuncionalidades.webp",
     alt3: "árbol de funcionalidades de steez",
-
-    // asidelink: 
 
   
   },
@@ -31,97 +32,106 @@ const proyectos = [
     id: 2,
     icono: "./img/brillo-iconotitulo.svg",
     titulo: "Brillo",
+    alt: "icono de brillo, una b sobre fondo verde oliva",
     descripcion:
       " Hubo talleres, rutas guiadas, conexión con el mundo rural y dinámicas de grupo. Retiro brillo tiene un tono de voz dulce y auténtico. Su territorio es la creatividad y sus valores la naturaleza, la luminosidad y la introspección.",
-    alt: "icono de brillo, una b sobre fondo verde oliva",
-    
+
     heading1: "Una dirección de arte sonriente",
-    text1:" La identidad visual se conforma por los dos colores principales que refuerzan la idea de naturaleza. La paleta se estira y se unen otros colores a la web que evocan creatividad. Hay ilustraciones pintadas que sirven como iconos o imágenes de soporte. Hay fotografías coloridas hechas con luz natural.",
-    img1: "./img/brillo-identidadvisual.svg",
+    text1:
+      " La identidad visual se conforma por los dos colores principales que refuerzan la idea de naturaleza. La paleta se estira y se unen otros colores a la web que evocan creatividad. Hay ilustraciones pintadas que sirven como iconos o imágenes de soporte. Hay fotografías coloridas hechas con luz natural.",
+    img1: "./img/brillo-identidad.webp",
     alt1: "identidad visual del proyecto brillo, logo, fotografía, landing web",
 
     heading2: "Las redes sociales toman importancia",
-    text2:"Cuidar los detalles y comunicar la información en redes sociales se volvió crucial para que el retiro llegase a más personas. Tanto las historias destacadas de Instagram como los reels son espacios donde la identidad de marca se cuida y se presenta, generando memorabilidad en el usuario.",
-    img2: "./img/brillo-instagram.svg",
+    text2:
+      "Cuidar los detalles y comunicar la información en redes sociales se volvió crucial para que el retiro llegase a más personas. Tanto las historias destacadas de Instagram como los reels son espacios donde la identidad de marca se cuida y se presenta, generando memorabilidad en el usuario.",
+    img2: "./img/brillo-instagram.webp",
     alt2: "historias de instagram, se han aplicado los colores de marca y la identidad visual",
 
     heading3: "Algunas pruebas y decisiones",
-    text3: "El lanzamiento de la web fue con Webflow, vinieron las pruebas, aquí algunas: logo, color, prototipos. En ese momento no tenía los conocimientos de ahora, por lo que hay muchos errores. Me alegro de haberlo intentado, gracias a este proyecto decidí formarme en diseño web :)",
-    img3: "./img/brillo-pruebas.svg",
+    text3:
+      "El lanzamiento de la web fue con Webflow, vinieron las pruebas, aquí algunas: logo, color, prototipos. En ese momento no tenía los conocimientos de ahora, por lo que hay muchos errores. Me alegro de haberlo intentado, gracias a este proyecto decidí formarme en diseño web :)",
+    img3: "./img/brillo-pruebas.webp",
     alt3: "pruebas de logo, color y prototipado web",
 
-    // asidelink: 
   },
-
 
   {
     id: 3,
     icono: "./img/festival-iconotitulo.svg",
     titulo: "Item",
+    alt: " ",
     descripcion:
       "Item es un festival de motion design para estudiantes y profesionales de esta área. Se ha construido la interfaz para la web, desde donde se gestiona la venta de entradas y se aporta información del evento. Mientras que la app es utilizada por los asistentes.",
-    alt: " ",
 
     heading1: "Soluciones nicho para un nicho de diseñadores",
-    text1:"La comunicación gráfica apela al público objetivo de Item: los motion designers. Para la gráfica de este festival, he tomado de referencia softwares de animación. Encontramos símbolos, jerarquías y un diseño de interacción inspirados en estos programas.",
-    img1: "./img/festival-img1.svg",
-    alt1: " ",
+    text1:
+      "La comunicación gráfica apela al público objetivo de Item: los motion designers. Para la gráfica de este festival, he tomado de referencia softwares de animación. Encontramos símbolos, jerarquías y un diseño de interacción inspirados en estos programas.",
+    img1: "./img/festival-desktop.webp",
+    alt1: "ahoa ",
 
     heading2: "Dispositivos diferentes, objetivos distintos",
-    text2:"El festival tiene una web donde acceder a la programa, mapa del recinto y otra información. Mientras que la app sirve a los participantes para acceder al evento, revisar a las actividades donde se han inscrito o poder inscribirse en nuevas.",
-    img2: "./img/festival-img1.svg",
-    alt2: " ",
+    text2:
+      "El festival tiene una web donde acceder a la programa, mapa del recinto y otra información. Mientras que la app sirve a los participantes para acceder al evento, revisar a las actividades donde se han inscrito o poder inscribirse en nuevas.",
+    img2: "./img/festival-dispositivos.webp",
+    alt2: "holaa ",
 
     heading3: "Diseño centrado en el usuario",
-    text3: "Un estudio previo de las personas que asistirían al festival fue clave para averiguar qué tipo de propuesta realizar, tanto en web como en app. Pues las necesidades del usuario en los diferentes dispositivos era diferente. Es por eso que se identificaron tres perfiles diferentes.",
-    img3: "./img/festival-img1.svg",
+    text3:
+      "Un estudio previo de las personas que asistirían al festival fue clave para averiguar qué tipo de propuesta realizar, tanto en web como en app. Pues las necesidades del usuario en los diferentes dispositivos era diferente. Es por eso que se identificaron tres perfiles diferentes.",
+    img3: "./img/festival-dcu.webp",
     alt3: "árbol de funcionalidades de steez",
 
-    // asidelink: 
+   
   },
 
-  
   {
     id: 4,
     icono: "./img/lugar-iconotitulo.svg",
+    alt: " ",
     titulo: "Fuera de lugar",
     descripcion:
       "¿Cómo sería acompañar a un artista musical a la hora de lanzar un disco? Desde los primeros singles, hasta el lanzamiento de álbum final. Pasando por el spotify canvas, redes sociales, diseño de vinilo y merchandasing. Así es Fuera de lugar, el disco de Kora bajo mi propia óptica.",
-    alt: " ",
 
     heading1: "Emociones a flor de piel",
-    text1:"Al escuchar este disco y analizar sus letras profundamente, pude identificar emociones y sensaciones presentes: el pasado, lo inadecuado, el dolor o la sensibilidad. Basándome en un libro de Eva Heller sobre teoría del color, extraje la paleta gráfica.",
-    img1: "./img/lugar-img1.svg",
-    alt1: " ",
+    text1:
+      "Al escuchar este disco y analizar sus letras profundamente, pude identificar emociones y sensaciones presentes: el pasado, lo inadecuado, el dolor o la sensibilidad. Basándome en un libro de Eva Heller sobre teoría del color, extraje la paleta gráfica.",
+    img1: "./img/lugar-identidad.webp",
+    alt1: "holaa",
 
     heading2: "Internet y música",
-    text2:"La manera en la que hoy en día se realizan los lanzamientos musicales, me llevó a realizar la portada de los singles como adelantos del disco. Aportando a todo el conjunto una coherencia gráfica.",
-    img2: "./img/lugar-img1.svg",
-    alt2: " ",
+    text2:
+      "La manera en la que hoy en día se realizan los lanzamientos musicales, me llevó a realizar la portada de los singles como adelantos del disco. Aportando a todo el conjunto una coherencia gráfica.",
+    img2: "./img/lugar-spotify.webp",
+    alt2: "holaa",
 
     heading3: "Lo tangible sigue siendo importante",
-    text3: "Realicé diferentes tipos de merchandising, desde el vinilo, algunos posters, una camiseta y una bolsa de tela donde transportarlo todo :)",
-    img3: "./img/lugar-img1.svg",
-    alt3: " ",
+    text3:
+      "Realicé diferentes tipos de merchandising, desde el vinilo, algunos posters, una camiseta y una bolsa de tela donde transportarlo todo :)",
+    img3: "./img/lugar-merch.webp",
+    alt3: "hola",
 
-    // asidelink: 
   },
-
-
 ];
 
+function mostrarProyecto() {
+  const contenedorProyecto = document.getElementById("proyecto");
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const proyectoId = urlParams.get("id");
 
-const contenedorProyecto = document.getElementById("proyecto");
+  if (!proyectoId) {
+    contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no proporcionado :( <br> Lo sentimos </p>`
+  }
+  const proyecto = proyectos.find((p) => p.id == proyectoId);
 
-const urlParams = new URLSearchParams(window.location.search);
-const proyectoId = urlParams.get("id");
+  if (proyecto) {
 
-const proyecto = proyectos.find((p) => p.id == proyectoId);
+    const actualId = proyectos.indexOf(proyecto);
+    const prevProyecto = proyectos[actualId -1] || proyectos[proyectos.length -1] 
+    const nextProyecto =  proyectos[actualId +1] || proyectos[0];
 
-if (proyecto) {
-  contenedorProyecto.innerHTML = 
-  `<article class="Project">
+    contenedorProyecto.innerHTML = `<article class="Project">
 
 
     <section class="ProjectHeader">
@@ -182,7 +192,7 @@ if (proyecto) {
           <img
             class="SectionClave-img"
             src="${proyecto.img2}"
-            alt="${proyecto.img3}"
+            alt="${proyecto.alt2}"
           />
         </div>
       </section>
@@ -209,10 +219,32 @@ if (proyecto) {
           />
         </div>
       </section>
+
+          <aside class="Aside">
+      <a href="project.html?id=${prevProyecto.id}" title="Visita el proyecto ${prevProyecto.titulo}" class="Aside-link">
+        <div class="Aside-texts">
+          <span class="material-symbols-outlined Aside-flecha"> arrow_back </span>
+          <p class="Aside-text">Anterior Proyecto</p>
+          <h3 class="Aside-textTitle">${prevProyecto.titulo}</h3>
+        </div>
+      </a>
+
+      <a href="project.html?id=${nextProyecto.id}" title="Visita el proyecto ${nextProyecto.titulo}" class="Aside-link">
+        <div class="Aside-texts">
+          <span class="material-symbols-outlined Aside-flecha"> arrow_forward </span>
+          <p class="Aside-text">Siguiente Proyecto</p>
+          <h3 class="Aside-textTitle">${nextProyecto.titulo}</h3>
+        </div>
+      </a>
+    </aside>
+
     </article>`;
-
-
-
-} else {
-  contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no encontrado :( <br> Lo sentimos </p>`;
+  } else {
+    contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no encontrado :( <br> Lo sentimos </p>`;
+  }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  mostrarProyecto();
+});
+
