@@ -177,6 +177,7 @@ color: var(--color-primary);
    height: 2rem; 
 }
 .Header-icon {
+  color: var(--color-primary);
   display: block;
 }
 
@@ -285,7 +286,26 @@ color: var(--color-primary);
     --padding: 1.6rem;
   }
 
+
+  
   /* Nav y Footer */
+
+  .Header-enlaces {
+    display: none;
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .Header-enlaces.isActive {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-heading-md);
+    gap: 2rem;
+  }
+
 
   .Footer {
     padding: 4rem 2rem 2rem;
