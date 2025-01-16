@@ -17,8 +17,6 @@
   --color-gris:  rgb(231, 231, 234);
   --color-gris-big:  rgb(130, 129, 142);
 
-
-
   --tipo-primary: "Robert", "Inter", sans-serif;
   --tipo-secondary: Arial, sans-serif;
   --font-size-parrafo: 1rem;
@@ -170,7 +168,7 @@ overflow: hidden;
 
 /* Cuando estamos dentro de un proyecto, mejor que se muestren en negro y no todos de gris, pues parecería un error (quería mantener la barra minimalista y no queria añadir un enlace en la nav bar por cada proyecto, por lo que no existe una sección concreta).  */
 .Header-enlaces--proyectos {
-color: black;
+color: var(--color-primary);
 }
 
 .Logo {
@@ -341,7 +339,6 @@ color: black;
     align-items: center;
   }
 
-  /* CAMBIAR por clase .isOpen */
   .Header-enlaces {
     display: flex;
     flex-direction: row;
@@ -404,7 +401,6 @@ color: black;
     padding: 1.3rem;
   }
 
-  /* CAMBIAR por clase .isOpen */
   .Header-enlaces {
     display: flex;
     flex-direction: row;
@@ -413,10 +409,10 @@ color: black;
     list-style: none;
   }
 
-  .Header-enlaces {
-    display: flex;
-    font-size: 1.4rem;
-    gap: 2.2rem;
+  .Header-enlaces.isActive {
+    height: auto;
+    flex-direction: row;
+    font-size: 1.125rem;
   }
 
   .Footer-textContainer {

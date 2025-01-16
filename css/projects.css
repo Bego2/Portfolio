@@ -17,7 +17,6 @@
 .ProjectHeader-imgContainer {
   width: 3rem;
   height: 3rem;
-  /* background-color: blueviolet; */
 }
 
 .ProjectHeader-img {
@@ -113,66 +112,31 @@
   height: auto;
   padding: 3rem var(--padding);
   color: var(--color-secondary);
-  background-color: black;
+  background-color: var(--color-primary);
 }
 
-.Aside-link {
-  display: flex;
-  width: 100%;
-}
-
-.Aside-festival {
-  height: 200px; /* cambiar */
-  max-width: 800px; /* cambiar */
-  width: 100%;
-
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-color: rgb(104, 104, 104);
-
-  border-radius: var(--border-radius-img);
-  overflow: hidden;
-}
-
-.Aside-festival--nombreA {
-  background-color: rgb(104, 49, 177);
-  /* background-image: url("../img/prueba-aside.webp") ;  */
-  /* cambiar */
-}
-
-.Aside-festival--nombreB {
-  background-color: rgb(104, 49, 177);
-  /* background-image: url("../img/prueba-aside-dos.webp") ; */
-  /* cambiar */
-}
-
-.Aside-festival--nombreA:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-}
-
-.Aside-festival--nombreB:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-}
-
-.Aside-texts {
+.Aside-container {
   display: flex;
   flex-direction: column;
-  position: relative;
-  padding: var(--padding);
   text-align: center;
+
+  width: 100%;
+  height: 14rem;
+  padding: var(--padding);
+
+  border-radius: var(--border-radius-img);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Aside-container:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .Aside-text {
   font-size: var(--font-size-parrafo);
-}
-
-.Aside-textTitle {
-  letter-spacing: var(--letter-spacing);
-  font-size: var(--font-size-heading-md);
-  font-weight: bold;
 }
 
 /* ___________________________ */
@@ -215,11 +179,10 @@
   background-color: rgb(164 151 255);
   color: var(--color-secondary);
   color: var(--color-secondary);
-
 }
 
 .Proyecto-tag--lugar {
-  background-color:  rgb(217, 212, 255);
+  background-color: rgb(217, 212, 255);
   color: rgb(93, 80, 197);
 }
 

@@ -25,7 +25,7 @@ const proyectos = [
     img3: "./img/steez-arbolfuncionalidades.webp",
     alt3: "árbol de funcionalidades de steez",
 
-  
+    imgaside: "./img/thumbnail-steez.webp",
   },
 
   {
@@ -53,7 +53,7 @@ const proyectos = [
       "El lanzamiento de la web fue con Webflow, vinieron las pruebas, aquí algunas: logo, color, prototipos. En ese momento no tenía los conocimientos de ahora, por lo que hay muchos errores. Me alegro de haberlo intentado, gracias a este proyecto decidí formarme en diseño web :)",
     img3: "./img/brillo-pruebas.webp",
     alt3: "pruebas de logo, color y prototipado web",
-
+    imgaside: "./img/thumbnail-brillo.webp",
   },
 
   {
@@ -81,8 +81,7 @@ const proyectos = [
       "Un estudio previo de las personas que asistirían al festival fue clave para averiguar qué tipo de propuesta realizar, tanto en web como en app. Pues las necesidades del usuario en los diferentes dispositivos era diferente. Es por eso que se identificaron tres perfiles diferentes.",
     img3: "./img/festival-dcu.webp",
     alt3: "árbol de funcionalidades de steez",
-
-   
+    imgaside: "./img/thumbnail-festival.webp",
   },
 
   {
@@ -110,7 +109,7 @@ const proyectos = [
       "Realicé diferentes tipos de merchandising, desde el vinilo, algunos posters, una camiseta y una bolsa de tela donde transportarlo todo :)",
     img3: "./img/lugar-merch.webp",
     alt3: "hola",
-
+    imgaside: "./img/thumbnail-lugar.webp",
   },
 ];
 
@@ -121,15 +120,14 @@ function mostrarProyecto() {
   const proyectoId = urlParams.get("id");
 
   if (!proyectoId) {
-    contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no proporcionado :( <br> Lo sentimos </p>`
+    contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no proporcionado :( <br> Lo sentimos </p>`;
   }
   const proyecto = proyectos.find((p) => p.id == proyectoId);
 
   if (proyecto) {
-
     const actualId = proyectos.indexOf(proyecto);
-    const prevProyecto = proyectos[actualId -1] || proyectos[proyectos.length -1] 
-    const nextProyecto =  proyectos[actualId +1] || proyectos[0];
+    const prevProyecto = proyectos[actualId - 1] || proyectos[proyectos.length - 1];
+    const nextProyecto = proyectos[actualId + 1] || proyectos[0];
 
     contenedorProyecto.innerHTML = `<article class="Project">
 
@@ -220,25 +218,28 @@ function mostrarProyecto() {
         </div>
       </section>
 
-          <aside class="Aside">
-      <a href="project.html?id=${prevProyecto.id}" title="Visita el proyecto ${prevProyecto.titulo}" class="Aside-link">
-        <div class="Aside-texts">
-          <span class="material-symbols-outlined Aside-flecha"> arrow_back </span>
+          <aside class="Aside" id="asideContainer">
+      <a href="projects.html?id=${prevProyecto.id}" title="Visita el proyecto ${prevProyecto.titulo}" class="Aside-container" id="Aside-prev">
           <p class="Aside-text">Anterior Proyecto</p>
-          <h3 class="Aside-textTitle">${prevProyecto.titulo}</h3>
-        </div>
       </a>
 
-      <a href="project.html?id=${nextProyecto.id}" title="Visita el proyecto ${nextProyecto.titulo}" class="Aside-link">
-        <div class="Aside-texts">
-          <span class="material-symbols-outlined Aside-flecha"> arrow_forward </span>
-          <p class="Aside-text">Siguiente Proyecto</p>
-          <h3 class="Aside-textTitle">${nextProyecto.titulo}</h3>
-        </div>
+      <a href="projects.html?id=${nextProyecto.id}" title="Visita el proyecto ${nextProyecto.titulo}" class="Aside-container" id="Aside-next">          <p class="Aside-text">Siguiente Proyecto</p>
       </a>
     </aside>
 
     </article>`;
+
+    // Ahora obtenemos los elementos de los asides
+    const asidePrev = document.getElementById("Aside-prev");
+    const asideNext = document.getElementById("Aside-next");
+
+    // Configuramos las imágenes de fondo
+    if (asidePrev) {
+      asidePrev.style.backgroundImage = `url(${prevProyecto.imgaside})`;
+    }
+    if (asideNext) {
+      asideNext.style.backgroundImage = `url(${nextProyecto.imgaside})`;
+    }
   } else {
     contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no encontrado :( <br> Lo sentimos </p>`;
   }
@@ -247,4 +248,3 @@ function mostrarProyecto() {
 document.addEventListener("DOMContentLoaded", () => {
   mostrarProyecto();
 });
-
