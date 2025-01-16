@@ -1,3 +1,5 @@
+/* Aquí encontramos todos aquellos elementos que no son globales pero que forman parte del index, es decir aqui tenemos: EL HERO y LA SECCIÓN CON LAS CUATRO TARJETAS DE PROYECTOS así como sus respectivos mediaqueries */
+
 /* __________________
         HERO 
  ____________________ */
@@ -22,11 +24,11 @@
 
 .Hero-arrow {
   font-size: 1.5em;
-  color: var(--color-gris-big);
+  color: var(--color-gris);
 }
 
 /* ______________________
-       CARDS PROYECTOS 
+       CARDS EN GENERAL 
  ________________________ */
 
 .Proyectos {
@@ -37,7 +39,7 @@
   font-size: var(--font-size-lead);
   margin-bottom: var(--padding);
   letter-spacing: var(--letter-spacing);
-  color: var(--color-gris-big);
+  color: var(--color-gris);
 }
 
 .Proyectos-grid {
@@ -47,7 +49,6 @@
   gap: 2.5rem;
 }
 
- 
 
 .Proyecto {
   display: flex;
@@ -105,9 +106,58 @@
   font-size: 0.9em;
 }
 
-/* ________________________ */
-/*       Media Queries      */
-/* ________________________ */
+
+
+/* ___________________________  
+       CARDS INDIVIDUALES      
+ ___________________________ */
+
+/* Proyecto STEEZ */
+.Proyecto--steez {
+  background-color: rgb(39, 39, 39);
+  color: var(--color-secondary);
+}
+
+.Proyecto-tag--steez {
+  background-color: rgb(99 99 99);
+}
+
+/* Proyecto BRILLO */
+.Proyecto--brillo {
+  background-color: rgb(83, 105, 53);
+  color: var(--color-secondary);
+}
+
+.Proyecto-tag--brillo {
+  background-color: rgb(120 144 88);
+}
+
+/* Proyecto FESTIVAL */
+.Proyecto--festival {
+  background-color: rgb(52, 72, 255);
+  color: var(--color-secondary);
+}
+
+.Proyecto-tag--festival {
+  background-color: rgb(151, 161, 255);
+}
+
+/* Proyecto LUGAR */
+.Proyecto--lugar {
+  background-color: rgb(164 151 255);
+  color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.Proyecto-tag--lugar {
+  background-color: rgb(217, 212, 255);
+  color: rgb(93, 80, 197);
+}
+
+
+/* ________________________  
+         Media Queries    
+ ________________________ */
 
 /* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {

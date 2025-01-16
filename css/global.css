@@ -1,3 +1,8 @@
+/* Global maneja el header y footer que encontramos en todos los html que tengo así como sus mediaqueries. 
+
+Tb encontramos el Root y Reset que han sido claves para dar estilos generales a mi web */
+
+
 @font-face {
   font-family: "Robert";
   src: url(../font/roobert.woff) format("truetype");
@@ -12,11 +17,10 @@
 :root {
   --color-primary: rgb(17, 16, 61);
   --color-secondary: rgb(255, 255, 249);
-  --color-gris: rgb(231, 231, 234);
-  --color-gris-big: rgb(130, 129, 142);
+  --color-gris: rgb(130, 129, 142);
   --color-acento: #5f4aff;
 
-  --tipo-primary: "Robert", "Inter", sans-serif;
+  --tipo-primary: "Robert", sans-serif;
   --tipo-secondary: Arial, sans-serif;
   --font-size-parrafo: 1rem;
   --font-size-lead: 0.875rem;
@@ -116,7 +120,7 @@ svg {
   font-size: var(--font-size-lead);
   letter-spacing: var(--letter-spacing);
   margin-bottom: 0.5rem;
-  color: var(--color-gris-big);
+  color: var(--color-gris);
 }
 
 /* Títulos medianos */
@@ -148,7 +152,7 @@ svg {
 
 .Header-enlaces {
   display: none;
-  color: var(--color-gris-big);
+  color: var(--color-gris);
   font-weight: bold;
   letter-spacing: var(--letter-spacing);
 }
@@ -171,11 +175,6 @@ svg {
   gap: 2rem;
 }
 
-/* Cuando estamos dentro de un proyecto, mejor que se muestren en negro y no todos de gris, pues parecería un error (quería mantener la barra minimalista y no queria añadir un enlace en la nav bar por cada proyecto, por lo que no existe una sección concreta).  */
-/* .Header-enlaces--proyectos {
-color: var(--color-primary);
-} */
-
 .Logo {
   /* content: url('logo-letra.webp'); */
   width: 2rem;
@@ -194,7 +193,7 @@ color: var(--color-primary);
 .Footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-gris);
+  background-color: rgb(231, 231, 234);
 
   padding: 2rem var(--padding) var(--padding);
   height: auto;
@@ -256,14 +255,13 @@ color: var(--color-primary);
 
 .Credits {
   font-size: .875rem;
-  color: var(--color-gris-big);
+  color: var(--color-gris);
 }
 
-/* _____________________________________________*/
-/*  Media Queries para Global e Index           */
-/* _____________________________________________*/
+/* _____________________________________________ 
+                Media Queries  
+  _____________________________________________*/
 
-/* He trabajado en Mobile First con la idea de cubrir las resoluciones desde 0px a 480px */
 
 /* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {
@@ -304,11 +302,10 @@ color: var(--color-primary);
     --padding: 1.6rem;
   }
 
-  /* Nav y Footer */
 
   .Header-enlaces {
     display: none;
-    color: var(--color-gris-big);
+    color: var(--color-gris);
     font-weight: bold;
   }
 
@@ -363,7 +360,6 @@ color: var(--color-primary);
     --padding: 1.8rem;
   }
 
-  /* Nav y Footer */
   .Header-nav {
     width: 100%;
     height: auto;
@@ -427,8 +423,6 @@ color: var(--color-primary);
     --font-size-large: 2.2rem;
     --padding: 3rem;
   }
-
-  /* Nav y Footer */
 
   .Header-nav {
     display: flex;

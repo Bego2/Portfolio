@@ -39,6 +39,15 @@ let proyectos = [
     alt3: "árbol de funcionalidades de steez",
 
     imgaside: "./img/thumbnail-steez.webp",
+
+    creditos: "Trabajo realizado junto con",
+    creditoslink: "https://www.katmadesign.com/",
+    creditoslink2: "https://www.instagram.com/nomilkhouse/" ,
+    creditostitle: "Página web de Ekaterina",
+    creditostitle2: "Instagram de Silvia",
+    creditostxt: "Ekaterina Matveeva",
+    creditostxt2: "Silvia Castillo"
+
   },
 
   {
@@ -63,6 +72,13 @@ let proyectos = [
     img3: "./img/brillo-pruebas.webp",
     alt3: "pruebas de logo, color y prototipado web",
     imgaside: "./img/thumbnail-brillo.webp",
+
+    creditos: "Visita mi página en Webflow",
+    creditoslink: "https://retirobrillo.webflow.io/",
+    creditostitle: "Visita la web de Brillo",
+    creditostxt: "Web de Brillo",
+  
+
   },
 
   {
@@ -132,7 +148,8 @@ function mostrarProyecto() {//2
 1. Guardamos actualId que ha sido obtenido gracias a .indexOf 
 2. Proyecto previo: gracias a restar 1 al índice actualId || si ve que no hay proyecto anterior, toma el ultimo de la lista proyectos 
 3. Proyecto siguiente: lo va a obtener sumando 1 al indice actual || si no hay coge el primer proyecto de la lista proyectos
-4. Después pasamos a la creación del html que está estructurada en partes: la primera con el icono del proyecto, el título y el parrafo de descripción. Después tres secciones cada una explica una clave importante del proyecto y una imagen asociada a la explicación. Por último un aside por si quieres visitar el siguiente o el anterior proyecto*/
+4. Después pasamos a la creación del html que está estructurada en partes: la primera con el icono del proyecto, el título y el parrafo de descripción. Después tres secciones cada una explica una clave importante del proyecto y una imagen asociada a la explicación. Tb una mini seccion de créditos. Por último, un aside por si quieres visitar el siguiente o el anterior proyecto
+5. Dentro de Créditos encontramos dos operadores ternarios el primero pregunta si existe creditos y creditos link, si existe los muestra en pantalla  ${proyecto.creditos && proyecto.creditoslink ?   -> despues el segundo pregunta si existe creditoslink2 . Todo esto es porque en algunos proyectos si que muestro creditos y en otros no. */
 
   if (proyecto) {
     const actualId = proyectos.indexOf(proyecto); //1
@@ -184,7 +201,7 @@ function mostrarProyecto() {//2
         </div>
       </section>
 
- <section class="SectionClave SectionClave--second">
+ <section class="SectionClave SectionClave--color">
         <div class="Section-textContainer">
           <div class="Section-textGroup">
             <h4 class="Text-headingLead">CLAVE 2/3</h4>
@@ -204,9 +221,9 @@ function mostrarProyecto() {//2
             alt="${proyecto.alt2}"
           />
         </div>
-      </section>
+   
 
-      <section class="SectionClave SectionClave--third">
+      <section class="SectionClave">
         <div class="Section-textContainer">
           <div class="Section-textGroup">
             <h4 class="Text-headingLead">CLAVE 3/3</h4>
@@ -227,27 +244,47 @@ function mostrarProyecto() {//2
         </div>
       </section>
 
-      <aside class="Aside" id="asideContainer">
+      ${proyecto.creditos && proyecto.creditoslink ? `
+        <section class="Creditos">
+          <h3 class="Creditos-titulo">${proyecto.creditos}</h3>
+          <div class="Creditos-links">
+            <a class="Creditos-link" href="${proyecto.creditoslink}" title="${proyecto.creditostitle}" target="_blank" rel="noopener noreferrer">
+              ${proyecto.creditostxt}
+            </a>
+            
+            ${proyecto.creditoslink2 ? `
+              <a class="Creditos-link" href="${proyecto.creditoslink2}" target="_blank" rel="noopener noreferrer" title="${proyecto.creditostitle2}">
+                ${proyecto.creditostxt2}
+              </a>
+            ` : ''}
+          </div>
+        </section>
+      ` : ''}
+    </article>
+
+  <aside class="Aside" id="asideContainer">
       <a href="projects.html?id=${prevProyecto.id}" 
       title="Visita el proyecto ${prevProyecto.titulo}" class="Aside-container" 
-      style="background-image: url(${prevProyecto.imgaside});>
+      style="background-image: url(${prevProyecto.imgaside});">
       <p class="Aside-text">Anterior Proyecto</p>
       </a>
 
       <a href="projects.html?id=${nextProyecto.id}" title="Visita el proyecto ${nextProyecto.titulo}" 
       class="Aside-container" 
-      style="background-image: url(${nextProyecto.imgaside});> 
+      style="background-image: url(${nextProyecto.imgaside});"> 
       <p class="Aside-text">Siguiente Proyecto</p>
       </a>
 
     </aside>
-    </article>`;
+    `;
+
+
   } else {
     contenedorProyecto.innerHTML = `<p class="ProjectHeader-title"> Proyecto no encontrado :( <br> Lo sentimos </p>`;
   }
 }
 
-// Para inicializar la función y que muestre el proyecto -cuando el DOM ya se ha cargado entonces lo muestra  
+// Para inicializar la función y cuando el DOM ya se ha cargado, entonces lo muestra  
 document.addEventListener("DOMContentLoaded", () => {
   mostrarProyecto();
 });

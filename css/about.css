@@ -1,4 +1,8 @@
-/* About */
+/* Aquí tenemos por un lado mi imagen de about en grande en la versión desktop y a la derecha varias secciones: sobre mi, habilidades (incluye al acordeon) y aprendizajes */
+
+/* _____________________________________________ 
+                       ABOUT                        
+/* _____________________________________________*/
 .About {
   width: 100%;
 }
@@ -8,7 +12,7 @@
 
 .About-img {
   width: 100%;
-  height: auto;  /* sería correcto poner height auto? */
+  height: auto;   
  
   object-fit: cover;
 }
@@ -68,13 +72,13 @@
   background-color: rgb(255, 254, 201);
 }
 
-/* MÓVILES GRANDES */
-@media (min-width: 481px) and (max-width: 767px) {
-}
 
-/* TABLETS */
-@media (min-width: 768px) and (max-width: 1023px) {
-}
+ 
+
+/* _____________________________________________ 
+                  Media Queries                   
+ _____________________________________________*/
+
 
 /* DESKTOP MEDIO */
 @media (min-width: 1024px) and (max-width: 1440px) {
