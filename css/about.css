@@ -4,7 +4,6 @@
 }
 .About-imgContainer {
   width: 100%;
-  background-color: grey;
 }
 
 .About-img {
@@ -33,7 +32,7 @@
 
 .Acordeon-bloque {
   margin: 1.8rem 0rem;
-  border-bottom: 0.1rem solid rgb(31, 41, 237);
+  border-bottom: 0.1rem solid var(--color-acento);
 }
 
 .Acordeon-boton {
@@ -42,6 +41,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 0rem;
+  cursor: pointer;
+}
+
+.Acordeon-boton:hover{
+  color: var(--color-acento);
 }
 
 .Acordeon-content {

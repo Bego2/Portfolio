@@ -5,17 +5,16 @@
   font-style: normal;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 /* __________________
         RESET 
  ____________________ */
 
 :root {
   --color-primary: rgb(17, 16, 61);
-  --color-secondary: rgb(253, 253, 245);
-  --color-gris:  rgb(231, 231, 234);
-  --color-gris-big:  rgb(130, 129, 142);
+  --color-secondary: rgb(255, 255, 249);
+  --color-gris: rgb(231, 231, 234);
+  --color-gris-big: rgb(130, 129, 142);
+  --color-acento: #5f4aff;
 
   --tipo-primary: "Robert", "Inter", sans-serif;
   --tipo-secondary: Arial, sans-serif;
@@ -73,7 +72,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, i, u, em {
   text-decoration: none;
   color: inherit;
 }
- 
+
 button {
   background-color: transparent;
   cursor: pointer;
@@ -96,6 +95,7 @@ svg {
 .Body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   font-family: var(--tipo-primary);
   color: var(--color-primary);
@@ -104,7 +104,7 @@ svg {
 }
 
 .Body.No-scroll {
-overflow: hidden;
+  overflow: hidden;
 }
 
 .Text-parrafo {
@@ -116,7 +116,7 @@ overflow: hidden;
   font-size: var(--font-size-lead);
   letter-spacing: var(--letter-spacing);
   margin-bottom: 0.5rem;
-  color: grey;
+  color: var(--color-gris-big);
 }
 
 /* Títulos medianos */
@@ -148,8 +148,13 @@ overflow: hidden;
 
 .Header-enlaces {
   display: none;
-  color: grey;
+  color: var(--color-gris-big);
   font-weight: bold;
+  letter-spacing: var(--letter-spacing);
+}
+
+.Header-link:hover {
+  color: var(--color-acento);
 }
 
 .u-black {
@@ -160,27 +165,27 @@ overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
- margin-top: 16rem;
+  margin-top: 16rem;
   align-items: center;
   font-size: var(--font-size-heading-md);
   gap: 2rem;
 }
 
 /* Cuando estamos dentro de un proyecto, mejor que se muestren en negro y no todos de gris, pues parecería un error (quería mantener la barra minimalista y no queria añadir un enlace en la nav bar por cada proyecto, por lo que no existe una sección concreta).  */
-.Header-enlaces--proyectos {
+/* .Header-enlaces--proyectos {
 color: var(--color-primary);
-}
+} */
 
 .Logo {
   /* content: url('logo-letra.webp'); */
-  width: 2rem;  
-   height: 2rem; 
+  width: 2rem;
+  height: 2rem;
 }
+
 .Header-icon {
   color: var(--color-primary);
   display: block;
 }
-
 
 /* __________________
         FOOTER 
@@ -189,10 +194,9 @@ color: var(--color-primary);
 .Footer {
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(234, 234, 234); */
-    background-color: var(--color-gris);
+  background-color: var(--color-gris);
 
-  padding: 3.9rem var(--padding) var(--padding);
+  padding: 2rem var(--padding) var(--padding);
   height: auto;
 }
 
@@ -206,18 +210,22 @@ color: var(--color-primary);
 .Circle {
   width: 0.9rem;
   height: 0.9rem;
-  background-color: black;
+  background-color: var(--color-acento);
+  box-shadow: 0 0.0625rem 0.375rem var(--color-acento);
   border-radius: 100%;
 }
 
 .Footer-leadText {
-  font-size: var(--font-size-heading-md);
+  font-size: var(--font-size-parrafo);
+  color: var(--color-acento);
+  letter-spacing: var(--letter-spacing);
 }
 
 .Footer-h2 {
   padding: 1rem 0rem 1rem;
   font-size: var(--font-size-large);
   max-width: 90%;
+  line-height: 2.3rem;
 }
 
 .Footer-enlaces {
@@ -243,10 +251,11 @@ color: var(--color-primary);
 
 .Footer-flecha {
   text-decoration: none;
+  font-size: var(--font-size-parrafo);
 }
 
 .Credits {
-  font-size: var(--font-size-parrafo);
+  font-size: .875rem;
   color: var(--color-gris-big);
 }
 
@@ -269,7 +278,7 @@ color: var(--color-primary);
     height: 100vh;
     display: flex;
     flex-direction: column;
-   margin-top: 18rem;
+    margin-top: 18rem;
     align-items: center;
     font-size: var(--font-size-heading-md);
     gap: 3rem;
@@ -295,15 +304,14 @@ color: var(--color-primary);
     --padding: 1.6rem;
   }
 
-  
   /* Nav y Footer */
 
   .Header-enlaces {
     display: none;
-    color: grey;
+    color: var(--color-gris-big);
     font-weight: bold;
   }
-  
+
   .Header-enlaces.isActive {
     height: 100vh;
     display: flex;
@@ -314,25 +322,25 @@ color: var(--color-primary);
     gap: 4rem;
   }
 
-  .Footer {
-    padding: 4rem 2rem 2rem;
+  .u-black {
+    color: var(--color-primary);
   }
 
-  .Footer-enlaces {
+  .Footer {
+    padding: 4rem 2rem 2rem;
+    display: flex;
     flex-direction: column;
   }
 
-  .Footer-textContainer {
+  .Footer-mainContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 6rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.2rem;
   }
 
   .Footer-h2 {
-    max-width: 50%;
-    line-height: 3.5rem;
+    max-width: 65%;
   }
 
   .Footer-enlaces {
@@ -341,9 +349,8 @@ color: var(--color-primary);
     gap: 1rem;
     padding-bottom: 0;
   }
-
-
 }
+
 
 /* DESKTOP MEDIO */
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -381,27 +388,28 @@ color: var(--color-primary);
   .Header-enlaces.isActive {
     height: auto;
     flex-direction: row;
-    font-size: 1.125rem;
   }
-
+  
+  .u-black {
+    color: var(--color-primary);
+  }
 
   .Header-icon {
     display: none;
   }
 
-  .Footer-textContainer {
+  .Footer-mainContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10rem;
+    margin-bottom: 0.5rem;
   }
 
   .Footer-h2 {
-    max-width: 45%;
-  }
-
-  .Footer-leadText {
-    font-size: 1.3rem;
+    max-width: 65%;
+    line-height: 2.3rem;
+    padding-top: 0.5rem;
   }
 
   .Footer-enlaces {
@@ -434,26 +442,37 @@ color: var(--color-primary);
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.625rem;
-    list-style: none;
+    gap: 1.9rem;
+    font-size: 1.5rem;
+
   }
 
   .Header-enlaces.isActive {
     height: auto;
     flex-direction: row;
-    font-size: 1.125rem;
   }
 
-  .Footer-textContainer {
+  .u-black {
+    color: var(--color-primary);
+  }
+
+  .Header-icon {
+    display: none;
+  }
+
+
+  .Footer-mainContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10rem;
+    margin-bottom: 1.5rem;
   }
 
   .Footer-h2 {
-    max-width: 40%;
-    line-height: 4.5rem;
+    max-width: 80%;
+    line-height: 3rem;
+    padding-top: 0.5rem;
   }
 
   .Footer-enlaces {
@@ -461,4 +480,9 @@ color: var(--color-primary);
     gap: 1rem;
     padding-bottom: 0;
   }
+
+  .Credits {
+    font-size: 1.125rem;
+  }
+
 }

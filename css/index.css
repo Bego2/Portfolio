@@ -22,7 +22,7 @@
 
 .Hero-arrow {
   font-size: 1.5em;
-  color: grey;
+  color: var(--color-gris-big);
 }
 
 /* ______________________
@@ -37,7 +37,7 @@
   font-size: var(--font-size-lead);
   margin-bottom: var(--padding);
   letter-spacing: var(--letter-spacing);
-  color: grey;
+  color: var(--color-gris-big);
 }
 
 .Proyectos-grid {
@@ -47,9 +47,7 @@
   gap: 2.5rem;
 }
 
-.Proyecto-link {
-  text-decoration: none;
-}
+ 
 
 .Proyecto {
   display: flex;
@@ -77,6 +75,7 @@
 .Proyecto-title {
   font-size: var(--font-size-heading-md);
   font-weight: bold;
+  letter-spacing: var(--letter-spacing);
 }
 
 .Proyecto-texts {
@@ -161,7 +160,7 @@
 @media (min-width: 1024px) and (max-width: 1440px) {
   .Hero {
     padding: 4rem 2.4rem;
-    height: 100vh;
+    height: auto;
   }
   /* H1 */
   .Hero-titulo {
@@ -192,6 +191,8 @@
     font-size: 1rem;
   }
 }
+
+/* DESKTOP GRANDE */
 
 @media (min-width: 1441px) {
   .Hero {

@@ -17,6 +17,7 @@
 .Text-headingMedium--contact {
   width: 80%;
   text-align: center;
+  font-weight: bold;
 }
 
 .Form {
@@ -72,7 +73,7 @@
   .Text-headingMedium--contact {
     width: 60%;
     text-align: left;
-    font-weight: bold;
+ 
   }
 
   .Form-input {
@@ -105,7 +106,7 @@
       .Text-headingMedium--contact {
         width: 60%;
         text-align: left;
-        font-weight: bold;
+    
       }
     
       .Form-input {

@@ -143,27 +143,27 @@
 /*      PROJECTOS en INDEX      /
 /* ___________________________ */
 
-/* Proyecto 1 */
-.Proyecto--oscuro {
+/* Proyecto STEEZ */
+.Proyecto--steez {
   background-color: rgb(39, 39, 39);
   color: var(--color-secondary);
 }
 
-.Proyecto-tag--oscuro {
+.Proyecto-tag--steez {
   background-color: rgb(99 99 99);
 }
 
-/* Proyecto 2 */
-.Proyecto--dos {
+/* Proyecto BRILLO */
+.Proyecto--brillo {
   background-color: rgb(83, 105, 53);
   color: var(--color-secondary);
 }
 
-.Proyecto-tag--verde {
+.Proyecto-tag--brillo {
   background-color: rgb(120 144 88);
 }
 
-/* Proyecto 3 */
+/* Proyecto FESTIVAL */
 .Proyecto--festival {
   background-color: rgb(52, 72, 255);
   color: var(--color-secondary);
@@ -173,7 +173,7 @@
   background-color: rgb(151, 161, 255);
 }
 
-/* Proyecto 4 */
+/* Proyecto LUGAR */
 
 .Proyecto--lugar {
   background-color: rgb(164 151 255);
