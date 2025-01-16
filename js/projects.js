@@ -229,11 +229,11 @@ function mostrarProyecto() {
 
     </article>`;
 
-    // Ahora obtenemos los elementos de los asides
+    // Para seleccionar los Aside-containers' correspondientes
     const asidePrev = document.getElementById("Aside-prev");
     const asideNext = document.getElementById("Aside-next");
 
-    // Configuramos las imágenes de fondo
+    // Imágenes de fondo del Aside
     if (asidePrev) {
       asidePrev.style.backgroundImage = `url(${prevProyecto.imgaside})`;
     }
