@@ -18,7 +18,8 @@ Tb encontramos el Root y Reset que han sido claves para dar estilos generales a 
   --color-primary: rgb(17, 16, 61);
   --color-secondary: rgb(255, 255, 249);
   --color-yellow: rgb(255, 254, 201);
-  --color-gris: rgb(130, 129, 142);
+  --color-gris: #4E4E56;
+
   --color-acento: #5f4aff;
   --color-gris-claro: rgb(245, 245, 249);
 
@@ -163,8 +164,8 @@ svg {
   color: var(--color-acento);
 }
 
-.u-black {
-  color: var(--color-primary);
+.u-acento {
+  color: var(--color-acento);
 }
 
 .isActive {
@@ -322,10 +323,6 @@ svg {
     gap: 4rem;
   }
 
-  .u-black {
-    color: var(--color-primary);
-  }
-
   .Header-icon {
     font-size: 2.625rem;
   }
@@ -392,10 +389,6 @@ svg {
     flex-direction: row;
   }
 
-  .u-black {
-    color: var(--color-primary);
-  }
-
   .Header-icon {
     display: none;
   }
@@ -451,10 +444,6 @@ svg {
   .isActive {
     height: auto;
     flex-direction: row;
-  }
-
-  .u-black {
-    color: var(--color-primary);
   }
 
   .Header-icon {

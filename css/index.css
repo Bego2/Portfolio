@@ -105,46 +105,48 @@
        CARDS INDIVIDUALES      
  ___________________________ */
 
+ /* Pd. Único lugar donde no se han aplicado custom properties para el color */
+
 /* Proyecto STEEZ */
 .Proyecto--steez {
-  background-color: rgb(39, 39, 39);
+  background-color: #1e1e1e;
   color: var(--color-secondary);
 }
 
 .Proyecto-tag--steez {
-  background-color: rgb(99 99 99);
+  background-color: #464646;
 }
 
 /* Proyecto BRILLO */
 .Proyecto--brillo {
-  background-color: rgb(83, 105, 53);
+  background-color:#21300e;
   color: var(--color-secondary);
 }
 
 .Proyecto-tag--brillo {
-  background-color: rgb(120 144 88);
+  background-color:#41522E;
 }
 
 /* Proyecto FESTIVAL */
 .Proyecto--festival {
-  background-color: rgb(52, 72, 255);
+  background-color: #0418d8; 
   color: var(--color-secondary);
 }
 
 .Proyecto-tag--festival {
-  background-color: rgb(151, 161, 255);
+  background-color: rgb(52, 72, 255);
 }
 
 /* Proyecto LUGAR */
 .Proyecto--lugar {
-  background-color: rgb(164 151 255);
+  background-color: #5245aa;
   color: var(--color-secondary);
   color: var(--color-secondary);
 }
 
 .Proyecto-tag--lugar {
   background-color: rgb(217, 212, 255);
-  color: rgb(93, 80, 197);
+  color: #5245aa;
 }
 
 /* ________________________  

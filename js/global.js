@@ -27,8 +27,8 @@ btnHeader.addEventListener("click", () => {
  
   1. Método que me ayuda a filtrar en qué página estamos gracias a include. 
   1.1. Primera condición para averiguar si estamos en el enlace home o en su sección proyectos
-  1.2. Pero si no, si no estamos en home, el enlace de la actualUrl se pone en u-black
-  1.3. Si no se cumple, entonces no agrega la clase u-black 
+  1.2. Pero si no, si no estamos en home, el enlace de la actualUrl se pone en u-acento
+  1.3. Si no se cumple, entonces no agrega la clase u-acento 
  2. Utility da color negro a la sección de la página que está activada actualmente, el resto las deja en gris */
 
 links.forEach((link) => { //0
@@ -41,13 +41,13 @@ links.forEach((link) => { //0
 
   if ( isHomePage && href === "index.html#SeccionProyectos") {
     //1.1
-    link.classList.add("u-black"); //2
+    link.classList.add("u-acento"); //2
   } else if (actualUrl.includes(href)) {
     //1.2
-    link.classList.add("u-black");
+    link.classList.add("u-acento");
   } else {
     //1.3
-    link.classList.remove("u-black");
+    link.classList.remove("u-acento");
   }
 
   /* HEADER. Este evento sirve cuando hemos clickado en alguno de los enlaces y ya estamos en una nueva página. 
