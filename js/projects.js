@@ -172,7 +172,7 @@ function mostrarProyecto() {//2
           >
           </picture>
         </div>
-        <h2 class="ProjectHeader-title">${proyecto.titulo}</h2>
+        <h1 class="ProjectHeader-title">${proyecto.titulo}</h1>
       </div>
       <p class="ProjectHeader-description">${proyecto.descripcion}
       </p>
