@@ -3,7 +3,7 @@
 
 const btnHeader = document.getElementById("Header-boton"); //Boton del menu
 const linksHeader = document.getElementById("Header-listaEnlaces"); // La lista de enlaces de Nav
-const iconHeader = document.getElementById("Header-icono"); // Icono a modificar + / x
+const iconHeader = btnHeader.querySelector(".material-symbols-outlined"); // Icono a modificar + / x
 const links = document.querySelectorAll(".Header-link"); // Todos los link a recorrer (Proyectos / About / Contact)
 const actualUrl = window.location.href; // La página actual
 
@@ -19,18 +19,26 @@ btnHeader.addEventListener("click", () => {
   }
 });
 
-
-/** HEADER. 0. Vamos a recorrer cada enlace de la nav bar
+ /** HEADER. pt2
+ * 0. Vamos a recorrer cada enlace de la nav bar
+ * Definimos dos constantes: href para localizar una link href, pues en la condicional preguntaremos por el
+ * isHomePage: para que las diferentes formas que tiene index.html de mostrarse en su url (si acaba con este / si incluye su link etc) sean preguntadas 
+ 
   1. Método que me ayuda a filtrar en qué página estamos gracias a include. 
   1.1. Primera condición para averiguar si estamos en el enlace home o en su sección proyectos
-  1.2. La segunda para cualquier otro enlace distinto del anterior 
-  1.3. Si no se cumple, entonces no agrega la clase black y los enlaces están en gris (el caso de los proyectos individuales porque no forman parte de la nav bar)
+  1.2. Pero si no, si no estamos en home, el enlace de la actualUrl se pone en u-black
+  1.3. Si no se cumple, entonces no agrega la clase u-black 
  2. Utility da color negro a la sección de la página que está activada actualmente, el resto las deja en gris */
 
 links.forEach((link) => { //0
   const href = link.getAttribute("href");
+  const isHomePage =  
+  actualUrl.endsWith("/") ||  
+  actualUrl.includes("index.html") || 
+  actualUrl === window.location.origin;  
 
-  if (actualUrl.includes("index.html") && href === "index.html#SeccionProyectos") {
+
+  if ( isHomePage && href === "index.html#SeccionProyectos") {
     //1.1
     link.classList.add("u-black"); //2
   } else if (actualUrl.includes(href)) {
@@ -43,7 +51,7 @@ links.forEach((link) => { //0
 
   /* HEADER. Este evento sirve cuando hemos clickado en alguno de los enlaces y ya estamos en una nueva página. 
   1. El menu se pliega y se desactiva la clase isActive
-  2. Se desactiva "No.-scroll" para seguir navegando
+  2. Se desactiva "No-scroll" para poder seguir navegando
   3. El icono vuelve a su estado normal [+] */
 
   link.addEventListener("click", () => {
