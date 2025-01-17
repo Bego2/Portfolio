@@ -4,9 +4,10 @@ Tb encontramos el Root y Reset que han sido claves para dar estilos generales a 
 
 @font-face {
   font-family: "Robert";
-  src: url(../font/roobert.woff) format("truetype");
+  src: url(../font/roobert.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 /* __________________
@@ -21,8 +22,7 @@ Tb encontramos el Root y Reset que han sido claves para dar estilos generales a 
   --color-acento: #5f4aff;
   --color-gris-claro: rgb(245, 245, 249);
 
-  --tipo-primary: "Robert", sans-serif;
-  --tipo-secondary: Arial, sans-serif;
+  --tipo-primary: "Robert", Helvetica, Arial, sans-serif;
   --font-size-parrafo: 1rem;
   --font-size-lead: 0.875rem;
   --font-size-heading-md: 1.5rem;
