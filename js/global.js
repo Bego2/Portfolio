@@ -6,6 +6,7 @@ const linksHeader = document.getElementById("Header-listaEnlaces"); // La lista 
 const iconHeader = btnHeader.querySelector(".material-symbols-outlined"); // Icono a modificar + / x
 const links = document.querySelectorAll(".Header-link"); // Todos los link a recorrer (Proyectos / About / Contact)
 const actualUrl = window.location.href; // La página actual
+const logo = document.getElementById("Logotipo");
 
 btnHeader.addEventListener("click", () => {
   linksHeader.classList.toggle("isActive"); //1
@@ -19,10 +20,10 @@ btnHeader.addEventListener("click", () => {
   }
 });
 
- /** HEADER. pt2
- * 0. Vamos a recorrer cada enlace de la nav bar
- * Definimos dos constantes: href para localizar una link href, pues en la condicional preguntaremos por el
- * isHomePage: para que las diferentes formas que tiene index.html de mostrarse en su url (si acaba con este / si incluye su link etc) sean preguntadas 
+ /* HEADER. pt2
+  0. Vamos a recorrer cada enlace de la nav bar
+ Definimos dos constantes: href para localizar una link href, pues en la condicional preguntaremos por el
+ isHomePage: para que las diferentes formas que tiene index.html de mostrarse en su url (si acaba con este / si incluye su link etc) sean preguntadas 
  
   1. Método que me ayuda a filtrar en qué página estamos gracias a include. 
   1.1. Primera condición para averiguar si estamos en el enlace home o en su sección proyectos
@@ -60,3 +61,14 @@ links.forEach((link) => { //0
     iconHeader.textContent = "add"; //3
   });
 });
+
+ /* Si el usuario clicka en mi logo, le lleva a home, para que el usuario sepa que es un elemento con el que interactuar, cambia su imagen a el color acento cuando se le hace mouseover :) 
+  */
+
+ logo.addEventListener('mouseover', () => {
+  logo.src = 'img/logo-violeta.webp';
+ }); 
+
+ logo.addEventListener('mouseout', () => {
+  logo.src = 'img/logo.webp';
+ }); 

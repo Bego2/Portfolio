@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Begoña Cz | Portfolio UX/UI</title>
     <meta
       name="description"
-      content="Soy Begoña Cardo y este es mi portfolio. Aquí muestro mis proyectos destacados sobre diseño UX/UI"
-    />
+      content="Soy Begoña Cardo y este es mi portfolio. Aquí muestro mis proyectos destacados sobre diseño UX/UI."
+    >
     <meta
       name="keywords"
-      content="portfolio, Begoña Cardo, diseño UX-UI, diseño digital, diseño web, Valencia, España, profesional"
-    />
-    <meta name="author" content="Begoña Cardo" />
-    <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados." />
+      content="Portfolio, Begoña Cardo, Diseño UX-UI, Diseño digital, Diseño web, Valencia, España, Profesional"
+    >
+    <meta name="author" content="Begoña Cardo">
+    <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados.">
 
-    <link rel="icon" type="image/webp" href="./img/favicon.webp" sizes="16x16" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/projects.css" />
+    <!-- Sigo el mismo orden para los links de los html:
+      1.Favicon 2.Icons 3.Global.css 4.Especifico.css 5.Global.js 6.Especifico.js-->
+    <link rel="icon" type="image/webp" href="./img/favicon.webp" sizes="16x16" >
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="./js/global.js" defer></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
-
 
   <!-- Página principal, desde donde navegar a cada uno de los proyectos -->
   <body class="Body">
-
     <!-- HEADER -->
     <header class="Header">
       <nav class="Header-nav">
         <div class="Header-items">
           <a href="index.html" title="Volver al inicio" class="Header-logo">
-            <img class="Logo" src="img/logo-letra.webp" alt="logotipo en negro, una b con letras góticas" />
+            <picture>
+              <img
+                class="Logo"
+                id="Logotipo"
+                src="img/logo.webp"
+                alt="logotipo en negro, una b con letras góticas"
+                loading="lazy"
+              >
+            </picture>
           </a>
-          <button  id="Header-boton">
-            <span class="Header-icon material-symbols-outlined">add</span>
+          <button id="Header-boton">
+            <span class="Header-icon material-symbols-outlined Acento">add</span>
           </button>
         </div>
 
         <ul class="Header-enlaces" id="Header-listaEnlaces">
           <li>
-            <a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link u-black"
+            <a href="index.html#SeccionProyectos" title="Ver la sección de proyectos" class="Header-link u-black Acento"
               >Proyectos</a
             >
           </li>
-          <li><a href="about.html" title="Información sobre mi" class="Header-link">Información</a></li>
-          <li><a href="contact.html" title="Contactar conmigo" class="Header-link">Contacto</a></li>
+          <li><a href="about.html" title="Información sobre mi" class="Header-link Acento">Información</a></li>
+          <li><a href="contact.html" title="Contactar conmigo" class="Header-link Acento">Contacto</a></li>
         </ul>
       </nav>
     </header>
-   
-    
+
     <main class="Main">
       <!-- HERO -->
       <section class="Hero">
@@ -75,14 +80,16 @@
         <div class="Proyectos-grid">
           <!-- Proyecto STEEZ -->
           <article class="Proyecto Proyecto--steez">
-            <a href="projects.html?id=1" title="Visita el proyecto Steez" class="Proyecto-link">
+            <a href="projects.html?id=1" title="Visita Steez" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
-                <img
-                  class="Proyecto-img"
-                  src="./img/thumbnail-steez.webp"
-                  alt="una carita sonriente y un texto a su derecha de color neon sobre fondo negro"
-                  loading="lazy"
-                />
+                <picture>
+                  <img
+                    class="Proyecto-img"
+                    src="./img/thumbnail-steez.webp"
+                    alt="una carita sonriente y un texto a su derecha de color neon sobre fondo negro"
+                    loading="lazy"
+                  >
+                </picture>
               </div>
 
               <div class="Proyecto-texts">
@@ -90,25 +97,27 @@
 
                 <h5 class="Proyecto-subtit">¿Cómo sería diseñar una app de intercambio de sneakers?</h5>
 
-                <div class="Proyecto-tags">
-                  <span class="Proyecto-tag Proyecto-tag--steez">Diseño de interfaz</span>
-                  <span class="Proyecto-tag Proyecto-tag--steez">Identidad gráfica</span>
-                  <span class="Proyecto-tag Proyecto-tag--steez">App móvil</span>
-                </div>
+                <ul class="Proyecto-tags">
+                  <li class="Proyecto-tag Proyecto-tag--steez">Diseño de interfaz</li>
+                  <li class="Proyecto-tag Proyecto-tag--steez">Identidad gráfica</li>
+                  <li class="Proyecto-tag Proyecto-tag--steez">App móvil</li>
+                </ul>
               </div>
             </a>
           </article>
 
           <!-- Proyecto BRILLO -->
           <article class="Proyecto Proyecto--brillo">
-            <a href="projects.html?id=2" title="Visita el proyecto Brillo" class="Proyecto-link">
+            <a href="projects.html?id=2" title="Visita Brillo" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
+                <picture>
                 <img
                   class="Proyecto-img"
                   src="./img/thumbnail-brillo.webp"
                   alt="brillo, escrito en letras blancas sobre fondo verde"
                   loading="lazy"
-                />
+                >
+                </picture>
               </div>
 
               <div class="Proyecto-texts">
@@ -116,20 +125,22 @@
 
                 <h5 class="Proyecto-subtit">¿Cómo sería diseñar la web de un retiro?</h5>
 
-                <div class="Proyecto-tags">
-                  <span class="Proyecto-tag Proyecto-tag--brillo">Diseño web</span>
-                  <span class="Proyecto-tag Proyecto-tag--brillo">Dirección creativa</span>
-                  <span class="Proyecto-tag Proyecto-tag--brillo">Redes sociales</span>
-                </div>
+                <ul class="Proyecto-tags">
+                  <li class="Proyecto-tag Proyecto-tag--brillo">Diseño web</li>
+                  <li class="Proyecto-tag Proyecto-tag--brillo">Dirección creativa</li>
+                  <li class="Proyecto-tag Proyecto-tag--brillo">Redes sociales</li>
+                </ul>
               </div>
             </a>
           </article>
 
           <!-- Proyecto fESTIVAL ITEM -->
           <article class="Proyecto Proyecto--festival">
-            <a href="projects.html?id=3" title="Visita el proyecto Item" class="Proyecto-link">
+            <a href="projects.html?id=3" title="Visita Item" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
-                <img class="Proyecto-img" src="./img/thumbnail-festival.webp" alt="" loading="lazy" />
+              <picture>
+                <img class="Proyecto-img" src="./img/thumbnail-festival.webp" alt="ITEM escrito en mayusculas sobre fondo azul brillante" loading="lazy" >
+              </picture>
               </div>
 
               <div class="Proyecto-texts">
@@ -137,20 +148,22 @@
 
                 <h5 class="Proyecto-subtit">¿Cómo sería diseñar la web de un evento de motion graphics?</h5>
 
-                <div class="Proyecto-tags">
-                  <span class="Proyecto-tag Proyecto-tag--festival">Diseño web</span>
-                  <span class="Proyecto-tag Proyecto-tag--festival">App móvil</span>
-                  <span class="Proyecto-tag Proyecto-tag--festival">Identidad visual</span>
-                </div>
+                <ul class="Proyecto-tags">
+                  <li class="Proyecto-tag Proyecto-tag--festival">Diseño web</li>
+                  <li class="Proyecto-tag Proyecto-tag--festival">App móvil</li>
+                  <li class="Proyecto-tag Proyecto-tag--festival">Identidad visual</li>
+                </ul>
               </div>
             </a>
           </article>
 
           <!-- Proyecto FUERA DE LUGAR -->
           <article class="Proyecto Proyecto--lugar">
-            <a href="projects.html?id=4" title="Visita el proyecto Fuera de lugar" class="Proyecto-link">
+            <a href="projects.html?id=4" title="Visita Fuera de lugar" class="Proyecto-link">
               <div class="Proyecto-imgContainer">
-                <img class="Proyecto-img" src="./img/thumbnail-lugar.webp" alt="" loading="lazy" />
+              <picture>
+                <img class="Proyecto-img" src="./img/thumbnail-lugar.webp" alt="Sobre fondo violeta, aparece con letras borrosas fuera de lugar" loading="lazy" >
+              </picture>
               </div>
 
               <div class="Proyecto-texts">
@@ -158,18 +171,17 @@
 
                 <h5 class="Proyecto-subtit">¿Cómo sería diseñar un disco musical y su campaña de lanzamiento?</h5>
 
-                <div class="Proyecto-tags">
-                  <span class="Proyecto-tag Proyecto-tag--lugar">Dirección creativa</span>
-                  <span class="Proyecto-tag Proyecto-tag--lugar">Portadas musicales</span>
-                  <span class="Proyecto-tag Proyecto-tag--lugar">Comunicación gráfica</span>
-                </div>
+                <ul class="Proyecto-tags">
+                  <li class="Proyecto-tag Proyecto-tag--lugar">Dirección creativa</li>
+                  <li class="Proyecto-tag Proyecto-tag--lugar">Música</li>
+                  <li class="Proyecto-tag Proyecto-tag--lugar">Comunicación gráfica</li>
+                </ul>
               </div>
             </a>
           </article>
         </div>
       </section>
     </main>
-
 
     <!-- FOOTER -->
     <footer class="Footer">
@@ -184,28 +196,28 @@
 
         <div class="Footer-enlaces">
           <a
-            href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bx3nh%2FYsjS1SBpBZBsb62KQ%3D%3D"
-            title="Enlace a mi Linkedin"
-            class="Footer-linkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p class="Footer-link">Linkedin</p>
-            <span class="material-symbols-outlined Footer-flecha"> north_east </span>
-          </a>
-          <a
-            href="mailto:begodrac@gmail.com"
-            title="Enviar un mail"
-            target="_blank"
-            class="Footer-link"
-            rel="noopener noreferrer"
-            >begodrac@gmail.com</a
-          >
+          href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bx3nh%2FYsjS1SBpBZBsb62KQ%3D%3D"
+          title="Enlace a mi Linkedin"
+          class="Footer-linkedin Acento"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p class="Footer-link">Linkedin</p>
+          <span class="material-symbols-outlined Footer-flecha"> north_east </span>
+        </a>
+        <a
+          href="mailto:begodrac@gmail.com"
+          title="Enviar un mail"
+          target="_blank"
+          class="Footer-link Acento"
+          rel="noopener noreferrer"
+          >begodrac@gmail.com</a
+        >
         </div>
       </div>
 
       <span class="Credits">
-        © 2025 Begoña Cardo <br />
+        © 2025 Begoña Cardo <br >
         Diseñada con pasión mientras bebía té matcha
       </span>
     </footer>

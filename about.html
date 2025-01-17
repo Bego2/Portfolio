@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Begoña Cz | Portfolio UX/UI</title>
-    <meta
-      name="description"
-      content="Soy Begoña Cardo y este es mi portfolio. Aquí muestro mis proyectos destacados sobre diseño UX/UI"
-    />
-    <meta
-      name="keywords"
-      content="portfolio, Begoña Cardo, diseño UX-UI, diseño digital, diseño web, Valencia, España, profesional"
-    />
-    <meta name="author" content="Begoña Cardo" />
-    <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información | Begoña Cz</title>
+    <meta name="description" content="Te cuento sobre mí: mis habilidades y aprendizajes como diseñadora digital." >
+    <meta name="keywords" content="Información, Creativa, Diseñadora, Habilidades, Aprendizajes">
+    <meta name="author" content="Begoña Cardo" >
+    <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="icon" type="image/webp" href="./img/favicon.webp" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about.css">
     <script src="./js/global.js" defer></script>
     <script src="./js/about.js" defer></script>
   </head>
-
 
   <!-- Página con Informacion sobre mi (quién soy, habilidades, aprendizajes) -->
   <body class="Body">
@@ -31,21 +24,29 @@
       <nav class="Header-nav">
         <div class="Header-items">
           <a href="index.html" title="Volver al inicio" class="Header-logo">
-            <img class="Logo" src="img/logo-letra.webp" alt="logotipo en negro, una b con letras góticas" />
+            <picture>
+              <img
+                class="Logo"
+                id="Logotipo"
+                src="img/logo.webp"
+                alt="logotipo en negro, una b con letras góticas"
+                loading="lazy"
+              >
+            </picture>
           </a>
-          <button class="Header-icon" id="Header-boton">
-            <span class="material-symbols-outlined" id="Header-icono">add</span>
+          <button id="Header-boton">
+            <span class="Header-icon material-symbols-outlined Acento">add</span>
           </button>
         </div>
 
         <ul class="Header-enlaces" id="Header-listaEnlaces">
           <li>
-            <a href="index.html#SeccionProyectos" title="Ir a página de proyectos" class="Header-link u-black"
+            <a href="index.html#SeccionProyectos" title="Ir a la sección de proyectos" class="Header-link u-black Acento"
               >Proyectos</a
             >
           </li>
-          <li><a href="about.html" title="Información sobre mi" class="Header-link">Información</a></li>
-          <li><a href="contact.html" title="Contactar conmigo" class="Header-link">Contacto</a></li>
+          <li><a href="about.html" title="Información sobre mi" class="Header-link Acento">Información</a></li>
+          <li><a href="contact.html" title="Contactar conmigo" class="Header-link Acento">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -56,7 +57,14 @@
       <section class="About">
         <!-- Mi imagen -->
         <div class="About-imgContainer">
-          <img class="About-img" src="./img/about.webp" alt="retrato chica joven" loading="lazy" />
+          
+            <img
+              class="About-img"
+              src="./img/about.webp"
+              alt="retrato chica leyendo, fondo minimalista"
+              loading="lazy"
+            >
+          
         </div>
 
         <!-- Contenido escrito -->
@@ -86,7 +94,7 @@
             <div class="Acordeon">
               <!-- Diseño visual -->
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton" id="Acordeon-btn">
+                <div class="Acordeon-boton Acento" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">Diseño visual ✨</h3>
                   <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono"> add </span>
                 </div>
@@ -107,7 +115,7 @@
 
               <!-- UX/UI -->
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton" id="Acordeon-btn">
+                <div class="Acordeon-boton Acento" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">UX/UI 🫶🏼</h3>
                   <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono">add</span>
                 </div>
@@ -129,7 +137,7 @@
 
               <!-- Diseño Web -->
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton" id="Acordeon-btn">
+                <div class="Acordeon-boton Acento" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">Diseño web 🖥️</h3>
                   <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono"> add </span>
                 </div>
@@ -149,7 +157,7 @@
 
               <!-- Herramientas -->
               <div class="Acordeon-bloque">
-                <div class="Acordeon-boton" id="Acordeon-btn">
+                <div class="Acordeon-boton Acento" id="Acordeon-btn">
                   <h3 class="Text-headingMedium">Herramientas 🔧</h3>
                   <span class="material-symbols-outlined Acordeon-icon" id="Acordeon-icono"> add </span>
                 </div>
@@ -186,6 +194,7 @@
     </main>
 
     <!-- FOOTER -->
+  
     <footer class="Footer">
       <div class="Footer-mainContainer">
         <div class="Footer-textContainer">
@@ -198,28 +207,28 @@
 
         <div class="Footer-enlaces">
           <a
-            href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bx3nh%2FYsjS1SBpBZBsb62KQ%3D%3D"
-            title="Enlace a mi Linkedin"
-            class="Footer-linkedin"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p class="Footer-link">Linkedin</p>
-            <span class="material-symbols-outlined Footer-flecha"> north_east </span>
-          </a>
-          <a
-            href="mailto:begodrac@gmail.com"
-            title="Enviar un mail"
-            target="_blank"
-            class="Footer-link"
-            rel="noopener noreferrer"
-            >begodrac@gmail.com</a
-          >
+          href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bx3nh%2FYsjS1SBpBZBsb62KQ%3D%3D"
+          title="Enlace a mi Linkedin"
+          class="Footer-linkedin Acento"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p class="Footer-link">Linkedin</p>
+          <span class="material-symbols-outlined Footer-flecha"> north_east </span>
+        </a>
+        <a
+          href="mailto:begodrac@gmail.com"
+          title="Enviar un mail"
+          target="_blank"
+          class="Footer-link Acento"
+          rel="noopener noreferrer"
+          >begodrac@gmail.com</a
+        >
         </div>
       </div>
 
       <span class="Credits">
-        © 2025 Begoña Cardo <br />
+        © 2025 Begoña Cardo <br >
         Diseñada con pasión mientras bebía té matcha
       </span>
     </footer>

@@ -21,7 +21,7 @@ y a la derecha varias secciones: sobre mi, habilidades (incluye un acordeon) y a
 /* Intro - Sobre mí */
 .About-intro {
   padding: 2rem var(--padding);
-  background-color: rgb(255, 254, 201);
+  background-color: var(--color-yellow);
 
 }
 
@@ -49,10 +49,6 @@ y a la derecha varias secciones: sobre mi, habilidades (incluye un acordeon) y a
   cursor: pointer;
 }
 
-.Acordeon-boton:hover{
-  color: var(--color-acento);
-}
-
 .Acordeon-content {
   display: flex;
   flex-direction: column;
@@ -62,7 +58,8 @@ y a la derecha varias secciones: sobre mi, habilidades (incluye un acordeon) y a
   transition: all 0.5s ease;
 }
 
-.Acordeon-content.isOpen {
+/* usOpen afecta a la clase .Acordeon-content */
+.isOpen {
   height: auto;
   padding: var(--padding) 0rem;
 }
@@ -70,7 +67,7 @@ y a la derecha varias secciones: sobre mi, habilidades (incluye un acordeon) y a
 /* Aprendizajes */
 .About-learnings {
   padding: 2rem var(--padding);
-  background-color: rgb(255, 254, 201);
+  background-color: var(--color-yellow);
 }
 
 
@@ -92,7 +89,6 @@ y a la derecha varias secciones: sobre mi, habilidades (incluye un acordeon) y a
 
   .About-imgContainer {
     width: 40%;
-    background-color: rgb(220, 211, 255);
     position: sticky;
     top: 0;
     height: 100vh;
@@ -122,10 +118,9 @@ y a la derecha varias secciones: sobre mi, habilidades (incluye un acordeon) y a
 
   .About-imgContainer {
     width: 50%;
-    background-color: rgb(21, 21, 21);
+    height: 100vh;
     position: sticky;
     top: 0;
-    height: 100vh;
   }
 
   .About-img {

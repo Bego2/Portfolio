@@ -2,7 +2,6 @@
 
 Tb encontramos el Root y Reset que han sido claves para dar estilos generales a mi web */
 
-
 @font-face {
   font-family: "Robert";
   src: url(../font/roobert.woff) format("truetype");
@@ -17,8 +16,10 @@ Tb encontramos el Root y Reset que han sido claves para dar estilos generales a 
 :root {
   --color-primary: rgb(17, 16, 61);
   --color-secondary: rgb(255, 255, 249);
+  --color-yellow: rgb(255, 254, 201);
   --color-gris: rgb(130, 129, 142);
   --color-acento: #5f4aff;
+  --color-gris-claro: rgb(245, 245, 249);
 
   --tipo-primary: "Robert", sans-serif;
   --tipo-secondary: Arial, sans-serif;
@@ -43,7 +44,7 @@ Tb encontramos el Root y Reset que han sido claves para dar estilos generales a 
 
 /* prettier-ignore */
 img, picture, video, iframe, figure {
-  max-width: 100%;
+  max-width: 100%;   /* Así no se desbordan las imágenes más*/
   width: 100%;
   display: block;
   object-fit: cover;
@@ -107,7 +108,7 @@ svg {
   line-height: 1.4;
 }
 
-.Body.No-scroll {
+.No-scroll {
   overflow: hidden;
 }
 
@@ -156,8 +157,9 @@ svg {
   font-weight: bold;
   letter-spacing: var(--letter-spacing);
 }
-
-.Header-link:hover {
+ 
+/* Para enlaces (header-links / footer etc ) -> aplicamos color acento */
+.Acento:hover {
   color: var(--color-acento);
 }
 
@@ -165,7 +167,7 @@ svg {
   color: var(--color-primary);
 }
 
-.Header-enlaces.isActive {
+.isActive {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -176,16 +178,17 @@ svg {
 }
 
 .Logo {
-  /* content: url('logo-letra.webp'); */
   width: 2rem;
   height: 2rem;
 }
 
-.Header-icon.material-symbols-outlined {
+.Header-icon {
   color: var(--color-primary);
   display: block;
   font-size: 2.5rem;
 }
+
+
 
 /* __________________
         FOOTER 
@@ -194,7 +197,7 @@ svg {
 .Footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(231, 231, 234);
+  background-color: var(--color-gris-claro);
 
   padding: 2rem var(--padding) var(--padding);
   height: auto;
@@ -236,6 +239,7 @@ svg {
   gap: 1rem;
 }
 
+
 .Footer-link {
   /* Afecta a linkedin y correo */
   text-decoration: underline;
@@ -255,14 +259,13 @@ svg {
 }
 
 .Credits {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: var(--color-gris);
 }
 
 /* _____________________________________________ 
                 Media Queries  
   _____________________________________________*/
-
 
 /* MÓVILES GRANDES */
 @media (min-width: 481px) and (max-width: 767px) {
@@ -273,7 +276,7 @@ svg {
     --letter-spacing: 0.07rem;
   }
 
-  .Header-enlaces.isActive {
+  .isActive {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -303,14 +306,13 @@ svg {
     --padding: 1.6rem;
   }
 
-
   .Header-enlaces {
     display: none;
     color: var(--color-gris);
     font-weight: bold;
   }
 
-  .Header-enlaces.isActive {
+  .isActive {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -324,10 +326,10 @@ svg {
     color: var(--color-primary);
   }
 
-  .Header-icon.material-symbols-outlined {
+  .Header-icon {
     font-size: 2.625rem;
   }
-  
+
   .Footer {
     padding: 4rem 2rem 2rem;
     display: flex;
@@ -352,7 +354,6 @@ svg {
     padding-bottom: 0;
   }
 }
-
 
 /* DESKTOP MEDIO */
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -386,16 +387,16 @@ svg {
     padding: 0;
   }
 
-  .Header-enlaces.isActive {
+  .isActive {
     height: auto;
     flex-direction: row;
   }
-  
+
   .u-black {
     color: var(--color-primary);
   }
 
-  .Header-icon.material-symbols-outlined {
+  .Header-icon {
     display: none;
   }
 
@@ -443,10 +444,11 @@ svg {
     align-items: center;
     gap: 1.9rem;
     font-size: 1.5rem;
-
   }
 
-  .Header-enlaces.isActive {
+  /* isActive se aplica a Header-enlaces */
+
+  .isActive {
     height: auto;
     flex-direction: row;
   }
@@ -455,10 +457,9 @@ svg {
     color: var(--color-primary);
   }
 
-  .Header-icon.material-symbols-outlined {
+  .Header-icon {
     display: none;
   }
-
 
   .Footer-mainContainer {
     display: flex;
@@ -483,5 +484,4 @@ svg {
   .Credits {
     font-size: 1.125rem;
   }
-
 }
