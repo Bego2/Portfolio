@@ -172,7 +172,7 @@ svg {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-top: 16rem;
+  margin: 16rem 0 0 0;
   align-items: center;
   font-size: var(--font-size-heading-md);
   gap: 2rem;
@@ -281,7 +281,7 @@ svg {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-top: 18rem;
+    margin: 18rem 0 0 0;
     align-items: center;
     font-size: var(--font-size-heading-md);
     gap: 3rem;
@@ -317,7 +317,7 @@ svg {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-top: 22rem;
+    margin: 18rem 0 0 0;
     align-items: center;
     font-size: var(--font-size-heading-md);
     gap: 4rem;
@@ -387,6 +387,7 @@ svg {
   .isActive {
     height: auto;
     flex-direction: row;
+    margin: 0;
   }
 
   .Header-icon {

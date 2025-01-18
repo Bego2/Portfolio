@@ -43,7 +43,7 @@
 }
 
 .Proyectos-grid {
-  margin-top: auto;
+  margin: auto  0 0 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
@@ -54,6 +54,12 @@
   flex-direction: column;
   background-color: var(--color-yellow);
   border-radius: var(--border-radius-img);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.Proyecto:hover {
+ filter: brightness(1.3);
+ transform: scale(1.03);
 }
 
 .Proyecto-imgContainer {
@@ -69,7 +75,9 @@
   width: 100%;
   height: auto;
   border-radius: var(--border-radius-img) var(--border-radius-img) 0 0;
+  filter: brightness();
 }
+
 
 .Proyecto-title {
   font-size: var(--font-size-heading-md);
@@ -96,10 +104,9 @@
 }
 
 .Proyecto-tag {
-  background-color: rgb(241, 241, 241);
   border-radius: 1.4rem;
   padding: 0.5rem 0.8rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem  0 0 0;
   font-size: 0.8rem;
 }
 
@@ -229,8 +236,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
   }
-
-
 
   .Proyecto-tags {
     gap: 1rem;

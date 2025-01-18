@@ -159,7 +159,6 @@ function mostrarProyecto() {//2
     //4
     contenedorProyecto.innerHTML = `<article class="Project">
 
-
     <section class="ProjectHeader">
       <div class="ProjectHeader-cabecera">
         <div class="ProjectHeader-imgContainer">
@@ -276,7 +275,10 @@ function mostrarProyecto() {//2
   }
 }
 
+// Para encapsular la funcion y poder reutilizarla, le hacemos un handler:
+
+const mostrarProyectoHandler = () => mostrarProyecto();
+ 
 // Para inicializar la función y cuando el DOM ya se ha cargado, entonces lo muestra  
-document.addEventListener("DOMContentLoaded", () => {
-  mostrarProyecto();
-});
+document.addEventListener("DOMContentLoaded", mostrarProyectoHandler);
+ 

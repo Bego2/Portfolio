@@ -62,7 +62,7 @@ links.forEach((link) => { //0
   });
 });
 
- /* Si el usuario clicka en mi logo, le lleva a home, para que el usuario sepa que es un elemento con el que interactuar, cambia su imagen a el color acento cuando se le hace mouseover :) 
+ /* LOGO. Si el usuario clicka en mi logo, le lleva a home, para que el usuario sepa que es un elemento con el que interactuar, cambia su imagen a el color acento cuando se le hace mouseover :) 
   */
 
  logo.addEventListener('mouseover', () => {
