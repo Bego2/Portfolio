@@ -62,11 +62,13 @@
   height: auto;
   object-fit: cover;
   width: 100%;
+
 }
 
 .Proyecto-img {
   width: 100%;
   height: auto;
+  border-radius: var(--border-radius-img) var(--border-radius-img) 0 0;
 }
 
 .Proyecto-title {
