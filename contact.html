@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto | Begoña Cz</title>
+    <meta
+      name="description"
+      content="Esta es la manera en la que puedes contactar conmigo, estoy a un mensaje de distancia."
+    >
+    <meta
+      name="keywords"
+      content="Contacto, formulario de contacto, email, mensaje"
+    >
+    <meta name="author" content="Begoña Cardo" >
+    <meta name="copyright" content="© Begoña Cardo 2025. Todos los derechos reservados." >
+
+    <link rel="icon" type="image/webp" href="./img/favicon.webp" sizes="16x16" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" >
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="./js/global.js" defer></script>
+  </head>
+
+
+  <!-- Página de contacto, con un formulario para ello-->
+  <body class="Body">
+    <!-- HEADER -->
+    <header class="Header">
+      <nav class="Header-nav">
+        <div class="Header-items">
+          <a href="index.html" title="Volver al inicio" class="Header-logo">
+            <img class="Logo" id="Logotipo" src="img/logo.webp" alt="logotipo en negro, una b con letras góticas" loading="lazy">
+          </a>
+
+          <button  id="Header-boton">
+            <span class="Header-icon material-symbols-outlined Acento">add</span>
+          </button>
+        </div>
+
+        <!-- enlaces navbar -->
+        <ul class="Header-enlaces" id="Header-listaEnlaces">
+          <li>
+            <a href="index.html#SeccionProyectos" title="Volver a sección de proyectos" class="Header-link u-acento Acento"
+              >Proyectos</a
+            >
+          </li>
+          <li><a href="about.html" title="Información sobre mi" class="Header-link Acento">Información</a></li>
+          <li><a href="contact.html" title="Contactar conmigo" class="Header-link Acento">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="Main">
+      <div class="Contact-textContainer">
+        <h1 class="Text-headingLead Text-headingLead--contact">CONTACTO</h1>
+        <h2 class="Text-headingMedium Text-headingMedium--contact">Estamos a un mensaje 📫 de distancia</h2>
+      </div>
+      <form action="#" method="GET" class="Form">
+        <label for="name">Nombre</label>
+        <input type="text" class="Form-input" id="name" name="name" placeholder="Escribe tu nombre" required >
+
+        <label for="email">Email</label>
+        <input type="email" class="Form-input" id="email" name="email" placeholder="Escribe tu email" required >
+
+        <label for="mensaje">Mensaje</label>
+        <input
+          type="text"
+          class="Form-input Form-input--mensaje"
+          id="mensaje"
+          name="mensaje"
+          placeholder="Escribe aquí tu mensaje"
+          required
+        >
+
+        <input type="button" value="Enviar" class="Form-input Form-btn" />
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="Footer">
+      <div class="Footer-mainContainer">
+        <div class="Footer-textContainer">
+          <div class="Footer-lead">
+            <div class="Circle"></div>
+            <p class="Footer-leadText">DISPONIBLE</p>
+          </div>
+          <h2 class="Footer-h2">Estoy a un mensaje de distancia</h2>
+        </div>
+
+        <div class="Footer-enlaces">
+          <a
+          href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bx3nh%2FYsjS1SBpBZBsb62KQ%3D%3D"
+          title="Enlace a mi Linkedin"
+          class="Footer-linkedin Acento"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p class="Footer-link">Linkedin</p>
+          <span class="material-symbols-outlined Footer-flecha"> north_east </span>
+        </a>
+        <a
+          href="mailto:begodrac@gmail.com"
+          title="Enviar un mail"
+          target="_blank"
+          class="Footer-link Acento"
+          rel="noopener noreferrer"
+          >begodrac@gmail.com</a
+        >
+        </div>
+      </div>
+
+      <span class="Credits">
+        © 2025 Begoña Cardo <br>
+        Diseñada con pasión mientras bebía té matcha
+      </span>
+    </footer>
+  </body>
+</html>
